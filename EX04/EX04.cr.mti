@@ -1,0 +1,22 @@
+{/filespace/y/yhuang546/ECE 551/EX04/synch_detect_tb.v} {1 {vlog -work work -vopt -stats=none {/filespace/y/yhuang546/ECE 551/EX04/synch_detect_tb.v}
+QuestaSim vlog 2023.2_1 Compiler 2023.05 May 12 2023
+-- Compiling module synch_detect_tb
+
+Top level modules:
+	synch_detect_tb
+
+} {} {}} {/filespace/y/yhuang546/ECE 551/EX04/dff.v} {1 {vlog -work work -vopt -stats=none {/filespace/y/yhuang546/ECE 551/EX04/dff.v}
+QuestaSim vlog 2023.2_1 Compiler 2023.05 May 12 2023
+-- Compiling module dff
+
+Top level modules:
+	dff
+
+} {} {}} {/filespace/y/yhuang546/ECE 551/EX04/synch_detect.sv} {1 {vlog -work work -vopt -stats=none {/filespace/y/yhuang546/ECE 551/EX04/synch_detect.sv}
+QuestaSim vlog 2023.2_1 Compiler 2023.05 May 12 2023
+-- Compiling module synch_detect
+
+Top level modules:
+	synch_detect
+
+} {} {}}

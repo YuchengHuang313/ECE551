@@ -1,0 +1,16 @@
+{/filespace/y/yhuang546/ECE 551/ff.sv} {1 {vlog -work work -vopt -stats=none {/filespace/y/yhuang546/ECE 551/ff.sv}
+QuestaSim vlog 2023.2_1 Compiler 2023.05 May 12 2023
+-- Compiling module ff
+
+Top level modules:
+	ff
+
+} {} {}} {/filespace/y/yhuang546/ECE 551/ff_tb.sv} {0 {vlog -work work -vopt -stats=none {/filespace/y/yhuang546/ECE 551/ff_tb.sv}
+QuestaSim vlog 2023.2_1 Compiler 2023.05 May 12 2023
+-- Compiling module ff_tb
+** Error: /filespace/y/yhuang546/ECE 551/ff_tb.sv(8): 'd' already exists; must not be redefined as a named block
+** Error: (vlog-13069) /filespace/y/yhuang546/ECE 551/ff_tb.sv(8): near "=": syntax error, unexpected '='.
+** Warning: /filespace/y/yhuang546/ECE 551/ff_tb.sv(19): (vlog-2283) Extra semicolon in $unit (global) scope.
+** Warning: /filespace/y/yhuang546/ECE 551/ff_tb.sv(19): (vlog-2284) Empty $unit scope found.
+
+} {4.0 6.0} {}}

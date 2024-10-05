@@ -1,0 +1,77 @@
+m255
+K4
+z2
+Z0 !s12c _opt
+Z1 !s99 nomlopt
+R0
+R1
+!s11f vlog 2023.3 2023.07, Jul 17 2023
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/intelFPGA_lite/23.1std
+T_opt
+!s110 1726855311
+V;fCZI_Jle@iY?T?f9OMTP0
+04 7 4 work sqrt_tb fast 0
+=2-4cd71792e1e3-66edb88e-191-25d4
+R1
+!s12b OEM100
+!s124 OEM10U2 
+o-quiet -auto_acc_if_foreign -work work +acc
+Z2 tCvgOpt 0
+n@_opt
+OL;O;2023.3;77
+vsqrt
+2I:/ECE 551/EX07/sqrt.sv
+Z3 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+!s110 1726855305
+!i10b 1
+!s100 C@7Xc[li4Km>gZVCQkh`12
+IDLmc3nEj>W=Wz6A0f<Qe]1
+S1
+Z4 dI:/ECE 551/EX07
+w1726852174
+8I:/ECE 551/EX07/sqrt.sv
+FI:/ECE 551/EX07/sqrt.sv
+!i122 9
+L0 1 121
+Z5 VDg1SIo80bB@j0V0VzS_@n1
+Z6 OL;L;2023.3;77
+r1
+!s85 0
+31
+Z7 !s108 1726855305.000000
+!s107 I:/ECE 551/EX07/sqrt.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|I:/ECE 551/EX07/sqrt.sv|
+!i113 0
+Z8 o-work work -sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R2
+vsqrt_tb
+2I:/ECE 551/EX07/sqrt_tb.sv
+R3
+!s110 1726855306
+!i10b 1
+!s100 F[dEC9@74k2BYIMnDE7Ud2
+Igmefo:HDR[SJ2_WS3^D550
+S1
+R4
+w1726855303
+8I:/ECE 551/EX07/sqrt_tb.sv
+FI:/ECE 551/EX07/sqrt_tb.sv
+!i122 10
+L0 2 52
+R5
+R6
+r1
+!s85 0
+31
+R7
+!s107 I:/ECE 551/EX07/sqrt_tb.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|I:/ECE 551/EX07/sqrt_tb.sv|
+!i113 0
+R8
+R2

@@ -1,0 +1,96 @@
+m255
+K4
+z2
+!s12c _opt
+Z0 !s99 nomlopt
+!s11f vlog 2023.2_1 2023.05, May 12 2023
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+d/filespace/y/yhuang546
+T_opt
+!s110 1726249225
+VP8eFE<iaEU`0<_AK7Bil>2
+04 15 4 work synch_detect_tb fast 0
+=1-000ae431a4f1-66e47909-1b85c-207796
+R0
+!s12b OEM100
+!s124 OEM100
+o-quiet -auto_acc_if_foreign -work work +acc
+Z1 tCvgOpt 0
+n@_opt
+OE;O;2023.2_1;77
+vdff
+2/filespace/y/yhuang546/ECE 551/EX04/dff.v
+!s110 1726249072
+!i10b 1
+!s100 HCnK_>zhS>[GBLoK9HcO[2
+ImfJEk0jelOK@6Qo?RSkfX3
+Z2 d/filespace/y/yhuang546/ECE 551/EX04
+w1726246819
+8/filespace/y/yhuang546/ECE 551/EX04/dff.v
+F/filespace/y/yhuang546/ECE 551/EX04/dff.v
+!i122 0
+L0 1 10
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+Z4 OE;L;2023.2_1;77
+r1
+!s85 0
+31
+Z5 !s108 1726249072.000000
+!s107 /filespace/y/yhuang546/ECE 551/EX04/dff.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/filespace/y/yhuang546/ECE 551/EX04/dff.v|
+!i113 0
+Z6 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
+vsynch_detect
+2/filespace/y/yhuang546/ECE 551/EX04/synch_detect.sv
+DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+!s110 1726249199
+!i10b 1
+!s100 F6nzc1ad@Qjz<mJ0G[j4k3
+IR56N^^T[FWk<<TXJ[f3z_3
+S1
+R2
+w1726249197
+8/filespace/y/yhuang546/ECE 551/EX04/synch_detect.sv
+F/filespace/y/yhuang546/ECE 551/EX04/synch_detect.sv
+!i122 2
+L0 1 8
+R3
+R4
+r1
+!s85 0
+31
+!s108 1726249199.000000
+!s107 /filespace/y/yhuang546/ECE 551/EX04/synch_detect.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/filespace/y/yhuang546/ECE 551/EX04/synch_detect.sv|
+!i113 0
+R6
+R1
+vsynch_detect_tb
+2/filespace/y/yhuang546/ECE 551/EX04/synch_detect_tb.v
+!s110 1726249073
+!i10b 1
+!s100 hh3dTahZ];Fl_GBh[OZCG2
+IKOD0NFg6HbQQIfXhUFeZg2
+R2
+w1726246822
+8/filespace/y/yhuang546/ECE 551/EX04/synch_detect_tb.v
+F/filespace/y/yhuang546/ECE 551/EX04/synch_detect_tb.v
+!i122 1
+L0 1 48
+R3
+R4
+r1
+!s85 0
+31
+R5
+!s107 /filespace/y/yhuang546/ECE 551/EX04/synch_detect_tb.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/filespace/y/yhuang546/ECE 551/EX04/synch_detect_tb.v|
+!i113 0
+R6
+R1

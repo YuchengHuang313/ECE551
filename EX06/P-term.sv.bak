@@ -1,0 +1,12 @@
+module P_term (input signed error[11:0], output signed P_term[13:0]);
+
+localparam P_COEFF = 6'h10;
+logic signed [9:0] sat;
+
+assign sat = (~error[11] & |error[10:9]) ? 10'h1ff :
+		(error[11] & ~&error[10:9]) ? 10'h200 :
+		error[9:0];
+
+assign P_term = sat * P_COEFF;
+
+endmodule

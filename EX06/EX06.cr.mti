@@ -1,0 +1,15 @@
+{I:/ECE 551/EX06/P_term_tb.sv} {1 {vlog -work work -vopt -sv -stats=none {I:/ECE 551/EX06/P_term_tb.sv}
+Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
+-- Compiling module P_term_tb
+
+Top level modules:
+	P_term_tb
+
+} {} {}} {I:/ECE 551/EX06/P-term.sv} {1 {vlog -work work -vopt -sv -stats=none {I:/ECE 551/EX06/P-term.sv}
+Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
+-- Compiling module P_term
+
+Top level modules:
+	P_term
+
+} {} {}}

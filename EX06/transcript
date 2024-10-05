@@ -1,0 +1,32 @@
+# Compile of P-term.sv failed with 1 errors.
+# Compile of P-term.sv failed with 2 errors.
+# Compile of P-term.sv failed with 2 errors.
+# Compile of P-term.sv failed with 9 errors.
+# Compile of P-term.sv failed with 2 errors.
+# Compile of P-term.sv failed with 9 errors.
+# Compile of P-term.sv failed with 9 errors.
+# Compile of P-term.sv failed with 4 errors.
+# Compile of P-term.sv failed with 4 errors.
+# Compile of P-term.sv failed with 4 errors.
+# Compile of P-term.sv failed with 4 errors.
+# Compile of P-term.sv was successful.
+# Compile of P-term.sv was successful.
+# Compile of P_term_tb.sv was successful.
+# Compile of P-term.sv was successful.
+# 2 compiles, 0 failed with no errors.
+# Compile of P_term_tb.sv was successful.
+# Compile of P-term.sv was successful.
+# 2 compiles, 0 failed with no errors.
+vsim work.P_term_tb -voptargs=+acc
+# vsim work.P_term_tb -voptargs="+acc" 
+# Start time: 13:19:23 on Sep 18,2024
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.P_term_tb(fast)
+# Loading work.P_term(fast)
+add wave -position insertpoint sim:/P_term_tb/iDUT/*
+run -all
+# End time: 13:21:29 on Sep 18,2024, Elapsed time: 0:02:06
+# Errors: 0, Warnings: 20

@@ -1,0 +1,202 @@
+# Compile of PID_cntrl.sv was successful.
+# Compile of PID_cntrl_tb.sv was successful.
+# Compile of plant.sv was successful.
+# 3 compiles, 0 failed with no errors.
+vsim work.PID_cntrl_tb -voptargs=+acc
+# vsim work.PID_cntrl_tb -voptargs="+acc" 
+# Start time: 12:35:48 on Sep 16,2024
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.PID_cntrl_tb(fast)
+# Loading work.PID(fast)
+# Loading work.plant(fast)
+add wave -position insertpoint  \
+sim:/PID_cntrl_tb/heading_deviation \
+sim:/PID_cntrl_tb/error \
+sim:/PID_cntrl_tb/drv_duty
+run -all
+# ** Note: $stop    : I:/ECE 551/EX05/PID_cntrl_tb.sv(36)
+#    Time: 51005 ns  Iteration: 1  Instance: /PID_cntrl_tb
+# Break in Module PID_cntrl_tb at I:/ECE 551/EX05/PID_cntrl_tb.sv line 36
+# Causality operation skipped due to absence of debug database file
+# Compile of PID_cntrl.sv was successful.
+# Compile of PID_cntrl_tb.sv was successful.
+# Compile of plant.sv was successful.
+# 3 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.PID_cntrl_tb(fast)
+# Loading work.PID(fast)
+# Loading work.plant(fast)
+run -all
+# ** Note: $stop    : I:/ECE 551/EX05/PID_cntrl_tb.sv(36)
+#    Time: 51005 ns  Iteration: 1  Instance: /PID_cntrl_tb
+# Break in Module PID_cntrl_tb at I:/ECE 551/EX05/PID_cntrl_tb.sv line 36
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.PID_cntrl_tb(fast)
+# Loading work.PID(fast)
+# Loading work.plant(fast)
+# Compile of PID_cntrl.sv was successful.
+# Compile of PID_cntrl_tb.sv was successful.
+# Compile of plant.sv was successful.
+# 3 compiles, 0 failed with no errors.
+run -all
+# ** Note: $stop    : I:/ECE 551/EX05/PID_cntrl_tb.sv(36)
+#    Time: 51005 ns  Iteration: 1  Instance: /PID_cntrl_tb
+# Break in Module PID_cntrl_tb at I:/ECE 551/EX05/PID_cntrl_tb.sv line 36
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.PID_cntrl_tb(fast)
+# Loading work.PID(fast)
+# Loading work.plant(fast)
+# Compile of PID_cntrl.sv was successful.
+# Compile of PID_cntrl_tb.sv was successful.
+# Compile of plant.sv was successful.
+# 3 compiles, 0 failed with no errors.
+run -all
+# ** Note: $stop    : I:/ECE 551/EX05/PID_cntrl_tb.sv(36)
+#    Time: 51005 ns  Iteration: 1  Instance: /PID_cntrl_tb
+# Break in Module PID_cntrl_tb at I:/ECE 551/EX05/PID_cntrl_tb.sv line 36
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.PID_cntrl_tb(fast)
+# Loading work.PID(fast)
+# Loading work.plant(fast)
+run -all
+# ** Note: $stop    : I:/ECE 551/EX05/PID_cntrl_tb.sv(36)
+#    Time: 51005 ns  Iteration: 1  Instance: /PID_cntrl_tb
+# Break in Module PID_cntrl_tb at I:/ECE 551/EX05/PID_cntrl_tb.sv line 36
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.PID_cntrl_tb(fast)
+# Loading work.PID(fast)
+# Loading work.plant(fast)
+# Compile of PID_cntrl.sv was successful.
+# Compile of PID_cntrl_tb.sv was successful.
+run -all
+# ** Note: $stop    : I:/ECE 551/EX05/PID_cntrl_tb.sv(36)
+#    Time: 51005 ns  Iteration: 1  Instance: /PID_cntrl_tb
+# Break in Module PID_cntrl_tb at I:/ECE 551/EX05/PID_cntrl_tb.sv line 36
+# Compile of plant.sv was successful.
+# 3 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.PID_cntrl_tb(fast)
+# Loading work.PID(fast)
+# Loading work.plant(fast)
+# Compile of PID_cntrl.sv was successful.
+# Compile of PID_cntrl_tb.sv was successful.
+# Compile of plant.sv was successful.
+# 3 compiles, 0 failed with no errors.
+run -all
+# ** Note: $stop    : I:/ECE 551/EX05/PID_cntrl_tb.sv(36)
+#    Time: 51005 ns  Iteration: 1  Instance: /PID_cntrl_tb
+# Break in Module PID_cntrl_tb at I:/ECE 551/EX05/PID_cntrl_tb.sv line 36
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.PID_cntrl_tb(fast)
+# Loading work.PID(fast)
+# Loading work.plant(fast)
+# Compile of PID_cntrl.sv was successful.
+# Compile of PID_cntrl_tb.sv was successful.
+# Compile of plant.sv was successful.
+# 3 compiles, 0 failed with no errors.
+run -all
+# ** Note: $stop    : I:/ECE 551/EX05/PID_cntrl_tb.sv(36)
+#    Time: 51005 ns  Iteration: 1  Instance: /PID_cntrl_tb
+# Break in Module PID_cntrl_tb at I:/ECE 551/EX05/PID_cntrl_tb.sv line 36
+# Compile of PID_cntrl.sv was successful.
+# Compile of PID_cntrl_tb.sv was successful.
+# Compile of plant.sv was successful.
+# 3 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.PID_cntrl_tb(fast)
+# Loading work.PID(fast)
+# Loading work.plant(fast)
+run -all
+# ** Note: $stop    : I:/ECE 551/EX05/PID_cntrl_tb.sv(36)
+#    Time: 51005 ns  Iteration: 1  Instance: /PID_cntrl_tb
+# Break in Module PID_cntrl_tb at I:/ECE 551/EX05/PID_cntrl_tb.sv line 36
+# Compile of PID_cntrl.sv was successful.
+# Compile of PID_cntrl_tb.sv was successful.
+# Compile of plant.sv was successful.
+# 3 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.PID_cntrl_tb(fast)
+# Loading work.PID(fast)
+# Loading work.plant(fast)
+run -all
+# ** Note: $stop    : I:/ECE 551/EX05/PID_cntrl_tb.sv(36)
+#    Time: 51005 ns  Iteration: 1  Instance: /PID_cntrl_tb
+# Break in Module PID_cntrl_tb at I:/ECE 551/EX05/PID_cntrl_tb.sv line 36
+# Compile of PID_cntrl.sv was successful.
+# Compile of PID_cntrl_tb.sv was successful.
+# Compile of plant.sv was successful.
+# 3 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.PID_cntrl_tb(fast)
+# Loading work.PID(fast)
+# Loading work.plant(fast)
+run -all
+# ** Note: $stop    : I:/ECE 551/EX05/PID_cntrl_tb.sv(36)
+#    Time: 51005 ns  Iteration: 1  Instance: /PID_cntrl_tb
+# Break in Module PID_cntrl_tb at I:/ECE 551/EX05/PID_cntrl_tb.sv line 36
+# Compile of PID_cntrl.sv was successful.
+# Compile of PID_cntrl_tb.sv was successful.
+# Compile of plant.sv was successful.
+# 3 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.PID_cntrl_tb(fast)
+# Loading work.PID(fast)
+# Loading work.plant(fast)
+run -all
+# ** Note: $stop    : I:/ECE 551/EX05/PID_cntrl_tb.sv(36)
+#    Time: 51005 ns  Iteration: 1  Instance: /PID_cntrl_tb
+# Break in Module PID_cntrl_tb at I:/ECE 551/EX05/PID_cntrl_tb.sv line 36

@@ -1,0 +1,63 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Users/83975/Desktop/ECE 551/HW2/Q2
+vI_term
+Z0 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+Z1 !s110 1727586575
+!i10b 1
+!s100 zfdkmHn[PF=?GMV`9DO`?2
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I;H;g_jT7k^m6kAlR?G]662
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+S1
+Z4 dC:/Users/83975/Desktop/ECE 551/HW2/Q4
+w1727584855
+8C:/Users/83975/Desktop/ECE 551/HW2/Q4/I_term.sv
+FC:/Users/83975/Desktop/ECE 551/HW2/Q4/I_term.sv
+!i122 17
+L0 1 38
+Z5 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z6 !s108 1727586575.000000
+!s107 C:/Users/83975/Desktop/ECE 551/HW2/Q4/I_term.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/83975/Desktop/ECE 551/HW2/Q4/I_term.sv|
+!i113 1
+Z7 o-work work -sv
+Z8 tCvgOpt 0
+n@i_term
+vI_term_tb
+R0
+R1
+!i10b 1
+!s100 ^GoBonc1PZZ@7QHJHO33`3
+R2
+I=]S^oVlngdmLBENZIO^R^3
+R3
+S1
+R4
+w1727586568
+8C:/Users/83975/Desktop/ECE 551/HW2/Q4/I_term_tb.sv
+FC:/Users/83975/Desktop/ECE 551/HW2/Q4/I_term_tb.sv
+!i122 18
+L0 1 58
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/83975/Desktop/ECE 551/HW2/Q4/I_term_tb.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/83975/Desktop/ECE 551/HW2/Q4/I_term_tb.sv|
+!i113 1
+R7
+R8
+n@i_term_tb

@@ -1,0 +1,15 @@
+vsim work.sqrt_tb -voptargs=+acc
+# vsim work.sqrt_tb -voptargs="+acc" 
+# Start time: 13:02:43 on Sep 20,2024
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading sv_std.std
+# Loading work.sqrt_tb(fast)
+# Loading work.sqrt(fast)
+add wave -position insertpoint  \
+sim:/sqrt_tb/op \
+sim:/sqrt_tb/sqrt \
+sim:/sqrt_tb/go \
+sim:/sqrt_tb/clk \
+sim:/sqrt_tb/rst_n \
+sim:/sqrt_tb/err \
+sim:/sqrt_tb/done

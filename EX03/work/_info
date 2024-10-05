@@ -1,0 +1,86 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Users/83975/OneDrive - UW-Madison/Junior/ece551/exercises/ex02
+vff
+Z0 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+Z1 !s110 1726349542
+!i10b 1
+!s100 kf7l<b^UUO]b<H9lD22Be1
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I42l;@2Y3J?ME1ODbDeNC_1
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+S1
+Z4 dC:/Users/83975/Desktop/ECE 551/EX03
+w1726347468
+8C:/Users/83975/Desktop/ECE 551/EX03/ff.sv
+FC:/Users/83975/Desktop/ECE 551/EX03/ff.sv
+!i122 8
+L0 2 8
+Z5 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z6 !s108 1726349542.000000
+!s107 C:/Users/83975/Desktop/ECE 551/EX03/ff.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/83975/Desktop/ECE 551/EX03/ff.sv|
+!i113 1
+Z7 o-work work -sv
+Z8 tCvgOpt 0
+vff_tb
+R0
+R1
+!i10b 1
+!s100 8=@FTPATfL6KnfCi6W[I]0
+R2
+I;bik27C^O[oEOL>oM<aEI2
+R3
+S1
+R4
+w1726349539
+Z9 8C:/Users/83975/Desktop/ECE 551/EX03/ff_tb.sv
+Z10 FC:/Users/83975/Desktop/ECE 551/EX03/ff_tb.sv
+!i122 9
+L0 1 58
+R5
+r1
+!s85 0
+31
+R6
+Z11 !s107 C:/Users/83975/Desktop/ECE 551/EX03/ff_tb.sv|
+Z12 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/83975/Desktop/ECE 551/EX03/ff_tb.sv|
+!i113 1
+R7
+R8
+Xff_tb_sv_unit
+R0
+!s110 1726349210
+V7;U8jEb87`J4d3JkB9I]]0
+r1
+!s85 0
+!i10b 1
+!s100 6Ef9:G7jDCaXDQ=HQkA_93
+I7;U8jEb87`J4d3JkB9I]]0
+!i103 1
+S1
+R4
+w1726349209
+R9
+R10
+!i122 5
+L0 20 0
+R5
+31
+!s108 1726349210.000000
+R11
+R12
+!i113 1
+R7
+R8

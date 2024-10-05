@@ -1,0 +1,15 @@
+{I:/ECE 551/EX10/Dterm.sv} {1 {vlog -work work -vopt -sv -stats=none {I:/ECE 551/EX10/Dterm.sv}
+Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
+-- Compiling module Dterm
+
+Top level modules:
+	Dterm
+
+} {} {}} {I:/ECE 551/EX10/Dterm_tb.sv} {1 {vlog -work work -vopt -sv -stats=none {I:/ECE 551/EX10/Dterm_tb.sv}
+Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
+-- Compiling module Dterm_tb
+
+Top level modules:
+	Dterm_tb
+
+} {} {}}
