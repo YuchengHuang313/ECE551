@@ -1,4 +1,549 @@
 # Reading pref.tcl
-# OpenFile {Z:/ECE 551/EX11/EX11.mpf}
-# Project file Z:/ECE 551/EX11/EX11.mpf is not readable.
-# Unable to open project.
+# OpenFile C:/Users/83975/Desktop/ECE551/EX11/EX11.mpf
+# Loading project EX11
+# Load canceled
+# Compile of SDiv.sv was successful.
+# Compile of SDiv_tb.sv was successful.
+# 2 compiles, 0 failed with no errors.
+# Compile of SDiv.sv was successful.
+# Compile of SDiv_tb.sv was successful.
+# 2 compiles, 0 failed with no errors.
+# Compile of SDiv.sv was successful.
+# Compile of SDiv_tb.sv was successful.
+# 2 compiles, 0 failed with no errors.
+# Compile of SDiv.sv failed with 2 errors.
+# Compile of SDiv_tb.sv was successful.
+# 2 compiles, 1 failed with 2 errors.
+# Compile of SDiv.sv failed with 2 errors.
+# Compile of SDiv_tb.sv was successful.
+# 2 compiles, 1 failed with 2 errors.
+# Compile of SDiv.sv failed with 2 errors.
+# Compile of SDiv_tb.sv was successful.
+# 2 compiles, 1 failed with 2 errors.
+# Compile of SDiv.sv failed with 1 errors.
+# Compile of SDiv_tb.sv was successful.
+# 2 compiles, 1 failed with 1 error.
+# Compile of SDiv.sv was successful.
+# Compile of SDiv_tb.sv was successful.
+# 2 compiles, 0 failed with no errors.
+# Compile of SDiv.sv was successful.
+# Compile of SDiv_tb.sv was successful.
+# 2 compiles, 0 failed with no errors.
+# Compile of SDiv.sv was successful.
+# Compile of SDiv_tb.sv failed with 2 errors.
+# 2 compiles, 1 failed with 2 errors.
+# Compile of SDiv.sv was successful.
+# Compile of SDiv_tb.sv failed with 2 errors.
+# 2 compiles, 1 failed with 2 errors.
+# Compile of SDiv.sv was successful.
+# Compile of SDiv_tb.sv failed with 2 errors.
+# 2 compiles, 1 failed with 2 errors.
+# Compile of SDiv.sv was successful.
+# Compile of SDiv_tb.sv was successful.
+# 2 compiles, 0 failed with no errors.
+# Compile of SDiv.sv was successful.
+# Compile of SDiv_tb.sv was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -gui work.SDiv_tb
+# vsim -gui work.SDiv_tb 
+# Start time: 20:48:23 on Oct 05,2024
+# Loading sv_std.std
+# Loading work.SDiv_tb
+# Loading work.SDiv
+add wave -position insertpoint  \
+sim:/SDiv_tb/iDUT/clk \
+sim:/SDiv_tb/iDUT/rst_n \
+sim:/SDiv_tb/iDUT/go \
+sim:/SDiv_tb/iDUT/dividend \
+sim:/SDiv_tb/iDUT/divisor \
+sim:/SDiv_tb/iDUT/quotient \
+sim:/SDiv_tb/iDUT/rdy \
+sim:/SDiv_tb/iDUT/state \
+sim:/SDiv_tb/iDUT/nxt_state \
+sim:/SDiv_tb/iDUT/negate_res \
+sim:/SDiv_tb/iDUT/init \
+sim:/SDiv_tb/iDUT/divisor_data \
+sim:/SDiv_tb/iDUT/dividor_data \
+sim:/SDiv_tb/iDUT/quot_sel
+run -all
+# ** Note: $stop    : C:/Users/83975/Desktop/ECE551/EX11/SDiv_tb.sv(31)
+#    Time: 210 ns  Iteration: 1  Instance: /SDiv_tb
+# Break in Module SDiv_tb at C:/Users/83975/Desktop/ECE551/EX11/SDiv_tb.sv line 31
+# Compile of SDiv.sv was successful.
+# Compile of SDiv_tb.sv was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.SDiv_tb
+# Loading work.SDiv
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Note: $stop    : C:/Users/83975/Desktop/ECE551/EX11/SDiv_tb.sv(31)
+#    Time: 210 ns  Iteration: 1  Instance: /SDiv_tb
+# Break in Module SDiv_tb at C:/Users/83975/Desktop/ECE551/EX11/SDiv_tb.sv line 31
+# Compile of SDiv.sv was successful.
+# Compile of SDiv_tb.sv was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.SDiv_tb
+# Loading work.SDiv
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Note: $stop    : C:/Users/83975/Desktop/ECE551/EX11/SDiv_tb.sv(31)
+#    Time: 210 ns  Iteration: 1  Instance: /SDiv_tb
+# Break in Module SDiv_tb at C:/Users/83975/Desktop/ECE551/EX11/SDiv_tb.sv line 31
+# Compile of SDiv.sv was successful.
+# Compile of SDiv_tb.sv was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.SDiv_tb
+# Loading work.SDiv
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Note: $stop    : C:/Users/83975/Desktop/ECE551/EX11/SDiv_tb.sv(33)
+#    Time: 220 ns  Iteration: 1  Instance: /SDiv_tb
+# Break in Module SDiv_tb at C:/Users/83975/Desktop/ECE551/EX11/SDiv_tb.sv line 33
+# Compile of SDiv.sv was successful.
+# Compile of SDiv_tb.sv was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.SDiv_tb
+# Loading work.SDiv
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Note: $stop    : C:/Users/83975/Desktop/ECE551/EX11/SDiv_tb.sv(33)
+#    Time: 220 ns  Iteration: 1  Instance: /SDiv_tb
+# Break in Module SDiv_tb at C:/Users/83975/Desktop/ECE551/EX11/SDiv_tb.sv line 33
+# Compile of SDiv.sv was successful.
+# Compile of SDiv_tb.sv was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.SDiv_tb
+# Loading work.SDiv
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Note: $stop    : C:/Users/83975/Desktop/ECE551/EX11/SDiv_tb.sv(33)
+#    Time: 40 ns  Iteration: 1  Instance: /SDiv_tb
+# Break in Module SDiv_tb at C:/Users/83975/Desktop/ECE551/EX11/SDiv_tb.sv line 33
+# Compile of SDiv.sv was successful.
+# Compile of SDiv_tb.sv was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.SDiv_tb
+# Loading work.SDiv
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Note: $stop    : C:/Users/83975/Desktop/ECE551/EX11/SDiv_tb.sv(33)
+#    Time: 120 ns  Iteration: 1  Instance: /SDiv_tb
+# Break in Module SDiv_tb at C:/Users/83975/Desktop/ECE551/EX11/SDiv_tb.sv line 33
+# Compile of SDiv.sv was successful.
+# Compile of SDiv_tb.sv was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.SDiv_tb
+# Loading work.SDiv
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Note: $stop    : C:/Users/83975/Desktop/ECE551/EX11/SDiv_tb.sv(33)
+#    Time: 120 ns  Iteration: 1  Instance: /SDiv_tb
+# Break in Module SDiv_tb at C:/Users/83975/Desktop/ECE551/EX11/SDiv_tb.sv line 33
+# Compile of SDiv.sv was successful.
+# Compile of SDiv_tb.sv was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.SDiv_tb
+# Loading work.SDiv
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Note: $stop    : C:/Users/83975/Desktop/ECE551/EX11/SDiv_tb.sv(33)
+#    Time: 120 ns  Iteration: 1  Instance: /SDiv_tb
+# Break in Module SDiv_tb at C:/Users/83975/Desktop/ECE551/EX11/SDiv_tb.sv line 33
+# Compile of SDiv.sv was successful.
+# Compile of SDiv_tb.sv was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.SDiv_tb
+# Loading work.SDiv
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Note: $stop    : C:/Users/83975/Desktop/ECE551/EX11/SDiv_tb.sv(33)
+#    Time: 120 ns  Iteration: 1  Instance: /SDiv_tb
+# Break in Module SDiv_tb at C:/Users/83975/Desktop/ECE551/EX11/SDiv_tb.sv line 33
+# Compile of SDiv.sv was successful.
+# Compile of SDiv_tb.sv was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.SDiv_tb
+# Loading work.SDiv
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Note: $stop    : C:/Users/83975/Desktop/ECE551/EX11/SDiv_tb.sv(33)
+#    Time: 120 ns  Iteration: 1  Instance: /SDiv_tb
+# Break in Module SDiv_tb at C:/Users/83975/Desktop/ECE551/EX11/SDiv_tb.sv line 33
+restart
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Note: $stop    : C:/Users/83975/Desktop/ECE551/EX11/SDiv_tb.sv(33)
+#    Time: 120 ns  Iteration: 1  Instance: /SDiv_tb
+# Break in Module SDiv_tb at C:/Users/83975/Desktop/ECE551/EX11/SDiv_tb.sv line 33
+restart
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Note: $stop    : C:/Users/83975/Desktop/ECE551/EX11/SDiv_tb.sv(33)
+#    Time: 120 ns  Iteration: 1  Instance: /SDiv_tb
+# Break in Module SDiv_tb at C:/Users/83975/Desktop/ECE551/EX11/SDiv_tb.sv line 33
+# Compile of SDiv.sv was successful.
+# Compile of SDiv_tb.sv was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.SDiv_tb
+# Loading work.SDiv
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Note: $stop    : C:/Users/83975/Desktop/ECE551/EX11/SDiv_tb.sv(33)
+#    Time: 120 ns  Iteration: 1  Instance: /SDiv_tb
+# Break in Module SDiv_tb at C:/Users/83975/Desktop/ECE551/EX11/SDiv_tb.sv line 33
+restart
+# Compile of SDiv.sv was successful.
+# Compile of SDiv_tb.sv was successful.
+# 2 compiles, 0 failed with no errors.
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Note: $stop    : C:/Users/83975/Desktop/ECE551/EX11/SDiv_tb.sv(33)
+#    Time: 120 ns  Iteration: 1  Instance: /SDiv_tb
+# Break in Module SDiv_tb at C:/Users/83975/Desktop/ECE551/EX11/SDiv_tb.sv line 33
+# Compile of SDiv.sv was successful.
+# Compile of SDiv_tb.sv was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.SDiv_tb
+# Loading work.SDiv
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Note: $stop    : C:/Users/83975/Desktop/ECE551/EX11/SDiv_tb.sv(33)
+#    Time: 120 ns  Iteration: 1  Instance: /SDiv_tb
+# Break in Module SDiv_tb at C:/Users/83975/Desktop/ECE551/EX11/SDiv_tb.sv line 33
+# Compile of SDiv.sv was successful.
+# Compile of SDiv_tb.sv was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.SDiv_tb
+# Loading work.SDiv
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Note: $stop    : C:/Users/83975/Desktop/ECE551/EX11/SDiv_tb.sv(33)
+#    Time: 120 ns  Iteration: 1  Instance: /SDiv_tb
+# Break in Module SDiv_tb at C:/Users/83975/Desktop/ECE551/EX11/SDiv_tb.sv line 33
+restart
+# Compile of SDiv.sv was successful.
+# Compile of SDiv_tb.sv was successful.
+# 2 compiles, 0 failed with no errors.
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Note: $stop    : C:/Users/83975/Desktop/ECE551/EX11/SDiv_tb.sv(33)
+#    Time: 120 ns  Iteration: 1  Instance: /SDiv_tb
+# Break in Module SDiv_tb at C:/Users/83975/Desktop/ECE551/EX11/SDiv_tb.sv line 33
+# Compile of SDiv.sv was successful.
+# Compile of SDiv_tb.sv was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.SDiv_tb
+# Loading work.SDiv
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Note: $stop    : C:/Users/83975/Desktop/ECE551/EX11/SDiv_tb.sv(33)
+#    Time: 120 ns  Iteration: 1  Instance: /SDiv_tb
+# Break in Module SDiv_tb at C:/Users/83975/Desktop/ECE551/EX11/SDiv_tb.sv line 33
+# Compile of SDiv.sv was successful.
+# Compile of SDiv_tb.sv was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.SDiv_tb
+# Loading work.SDiv
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Note: $stop    : C:/Users/83975/Desktop/ECE551/EX11/SDiv_tb.sv(33)
+#    Time: 120 ns  Iteration: 1  Instance: /SDiv_tb
+# Break in Module SDiv_tb at C:/Users/83975/Desktop/ECE551/EX11/SDiv_tb.sv line 33
+# Compile of SDiv.sv was successful.
+# Compile of SDiv_tb.sv was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.SDiv_tb
+# Loading work.SDiv
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Note: $stop    : C:/Users/83975/Desktop/ECE551/EX11/SDiv_tb.sv(33)
+#    Time: 120 ns  Iteration: 1  Instance: /SDiv_tb
+# Break in Module SDiv_tb at C:/Users/83975/Desktop/ECE551/EX11/SDiv_tb.sv line 33
+# Compile of SDiv.sv was successful.
+# Compile of SDiv_tb.sv was successful.
+# 2 compiles, 0 failed with no errors.
+# Compile of SDiv.sv was successful.
+# Compile of SDiv_tb.sv was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.SDiv_tb
+# Loading work.SDiv
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Note: $stop    : C:/Users/83975/Desktop/ECE551/EX11/SDiv_tb.sv(33)
+#    Time: 120 ns  Iteration: 1  Instance: /SDiv_tb
+# Break in Module SDiv_tb at C:/Users/83975/Desktop/ECE551/EX11/SDiv_tb.sv line 33
+# Compile of SDiv.sv was successful.
+# Compile of SDiv_tb.sv was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.SDiv_tb
+# Loading work.SDiv
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Note: $stop    : C:/Users/83975/Desktop/ECE551/EX11/SDiv_tb.sv(33)
+#    Time: 120 ns  Iteration: 1  Instance: /SDiv_tb
+# Break in Module SDiv_tb at C:/Users/83975/Desktop/ECE551/EX11/SDiv_tb.sv line 33
+restart
+# Compile of SDiv.sv was successful.
+# Compile of SDiv_tb.sv was successful.
+# 2 compiles, 0 failed with no errors.
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Note: $stop    : C:/Users/83975/Desktop/ECE551/EX11/SDiv_tb.sv(33)
+#    Time: 120 ns  Iteration: 1  Instance: /SDiv_tb
+# Break in Module SDiv_tb at C:/Users/83975/Desktop/ECE551/EX11/SDiv_tb.sv line 33
+# Compile of SDiv.sv was successful.
+# Compile of SDiv_tb.sv was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.SDiv_tb
+# Loading work.SDiv
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Note: $stop    : C:/Users/83975/Desktop/ECE551/EX11/SDiv_tb.sv(33)
+#    Time: 120 ns  Iteration: 1  Instance: /SDiv_tb
+# Break in Module SDiv_tb at C:/Users/83975/Desktop/ECE551/EX11/SDiv_tb.sv line 33
+# Compile of SDiv.sv was successful.
+# Compile of SDiv_tb.sv was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.SDiv_tb
+# Loading work.SDiv
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Note: $stop    : C:/Users/83975/Desktop/ECE551/EX11/SDiv_tb.sv(33)
+#    Time: 120 ns  Iteration: 1  Instance: /SDiv_tb
+# Break in Module SDiv_tb at C:/Users/83975/Desktop/ECE551/EX11/SDiv_tb.sv line 33
+restart
+# Compile of SDiv.sv was successful.
+# Compile of SDiv_tb.sv was successful.
+# 2 compiles, 0 failed with no errors.
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Note: $stop    : C:/Users/83975/Desktop/ECE551/EX11/SDiv_tb.sv(33)
+#    Time: 120 ns  Iteration: 1  Instance: /SDiv_tb
+# Break in Module SDiv_tb at C:/Users/83975/Desktop/ECE551/EX11/SDiv_tb.sv line 33
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.SDiv_tb
+# Loading work.SDiv
+# Compile of SDiv.sv was successful.
+# Compile of SDiv_tb.sv was successful.
+# 2 compiles, 0 failed with no errors.
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Note: $stop    : C:/Users/83975/Desktop/ECE551/EX11/SDiv_tb.sv(33)
+#    Time: 120 ns  Iteration: 1  Instance: /SDiv_tb
+# Break in Module SDiv_tb at C:/Users/83975/Desktop/ECE551/EX11/SDiv_tb.sv line 33
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.SDiv_tb
+# Loading work.SDiv
+# Compile of SDiv.sv was successful.
+# Compile of SDiv_tb.sv was successful.
+# 2 compiles, 0 failed with no errors.
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Note: $stop    : C:/Users/83975/Desktop/ECE551/EX11/SDiv_tb.sv(33)
+#    Time: 120 ns  Iteration: 1  Instance: /SDiv_tb
+# Break in Module SDiv_tb at C:/Users/83975/Desktop/ECE551/EX11/SDiv_tb.sv line 33
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.SDiv_tb
+# Loading work.SDiv
+# Compile of SDiv.sv was successful.
+# Compile of SDiv_tb.sv was successful.
+# 2 compiles, 0 failed with no errors.
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Note: $stop    : C:/Users/83975/Desktop/ECE551/EX11/SDiv_tb.sv(33)
+#    Time: 120 ns  Iteration: 1  Instance: /SDiv_tb
+# Break in Module SDiv_tb at C:/Users/83975/Desktop/ECE551/EX11/SDiv_tb.sv line 33
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.SDiv_tb
+# Loading work.SDiv
+# Compile of SDiv.sv was successful.
+# Compile of SDiv_tb.sv was successful.
+# 2 compiles, 0 failed with no errors.
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Note: $stop    : C:/Users/83975/Desktop/ECE551/EX11/SDiv_tb.sv(33)
+#    Time: 120 ns  Iteration: 1  Instance: /SDiv_tb
+# Break in Module SDiv_tb at C:/Users/83975/Desktop/ECE551/EX11/SDiv_tb.sv line 33
+# Compile of SDiv.sv was successful.
+# Compile of SDiv_tb.sv was successful.
+# 2 compiles, 0 failed with no errors.
+# Compile of SDiv.sv was successful.
+# Compile of SDiv_tb.sv was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.SDiv_tb
+# Loading work.SDiv
+# Compile of SDiv.sv was successful.
+# Compile of SDiv_tb.sv was successful.
+# 2 compiles, 0 failed with no errors.
+# Compile of SDiv.sv was successful.
+# Compile of SDiv_tb.sv was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.SDiv_tb
+# Loading work.SDiv
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Note: $stop    : C:/Users/83975/Desktop/ECE551/EX11/SDiv_tb.sv(33)
+#    Time: 120 ns  Iteration: 1  Instance: /SDiv_tb
+# Break in Module SDiv_tb at C:/Users/83975/Desktop/ECE551/EX11/SDiv_tb.sv line 33
+restart
+# Compile of SDiv.sv was successful.
+# Compile of SDiv_tb.sv was successful.
+# 2 compiles, 0 failed with no errors.
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Note: $stop    : C:/Users/83975/Desktop/ECE551/EX11/SDiv_tb.sv(33)
+#    Time: 120 ns  Iteration: 1  Instance: /SDiv_tb
+# Break in Module SDiv_tb at C:/Users/83975/Desktop/ECE551/EX11/SDiv_tb.sv line 33
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.SDiv_tb
+# Loading work.SDiv
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Note: $stop    : C:/Users/83975/Desktop/ECE551/EX11/SDiv_tb.sv(33)
+#    Time: 120 ns  Iteration: 1  Instance: /SDiv_tb
+# Break in Module SDiv_tb at C:/Users/83975/Desktop/ECE551/EX11/SDiv_tb.sv line 33
+# Compile of SDiv.sv was successful.
+# Compile of SDiv_tb.sv was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.SDiv_tb
+# Loading work.SDiv
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Note: $stop    : C:/Users/83975/Desktop/ECE551/EX11/SDiv_tb.sv(33)
+#    Time: 120 ns  Iteration: 1  Instance: /SDiv_tb
+# Break in Module SDiv_tb at C:/Users/83975/Desktop/ECE551/EX11/SDiv_tb.sv line 33
+# Compile of SDiv.sv was successful.
+# Compile of SDiv_tb.sv was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.SDiv_tb
+# Loading work.SDiv
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Note: $stop    : C:/Users/83975/Desktop/ECE551/EX11/SDiv_tb.sv(33)
+#    Time: 120 ns  Iteration: 1  Instance: /SDiv_tb
+# Break in Module SDiv_tb at C:/Users/83975/Desktop/ECE551/EX11/SDiv_tb.sv line 33
+# End time: 21:37:53 on Oct 05,2024, Elapsed time: 0:49:30
+# Errors: 0, Warnings: 1

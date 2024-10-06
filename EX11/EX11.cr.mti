@@ -1,5 +1,12 @@
-{I:/ECE 551/EX11/SDiv_template.sv} {1 {vlog -work work -vopt -sv -stats=none {I:/ECE 551/EX11/SDiv_template.sv}
-Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
+C:/Users/83975/Desktop/ECE551/EX11/SDiv_tb.sv {1 {vlog -work work -sv -stats=none C:/Users/83975/Desktop/ECE551/EX11/SDiv_tb.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module SDiv_tb
+
+Top level modules:
+	SDiv_tb
+
+} {} {}} C:/Users/83975/Desktop/ECE551/EX11/SDiv.sv {1 {vlog -work work -sv -stats=none {C:\Users\83975\Desktop\ECE551\EX11\SDiv.sv}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
 -- Compiling module SDiv
 
 Top level modules:
