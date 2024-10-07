@@ -19,7 +19,7 @@ module SDiv_tb ();
     clk = 0;
     rst_n = 0;
     go = 0;
-    dividend = 16'h0008;
+    dividend = -16'h0008;
     divisor = 16'h0002;
 
     @(negedge clk);

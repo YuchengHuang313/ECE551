@@ -29,9 +29,9 @@ module SDiv (
   logic negate_res, init;
 
   // internal signals
-  logic [15:0] divisor_data, dividor_data;
+  logic [15:0] divisor_data, dividor_data, difference;
   logic [1:0] quot_sel;
-
+  assign difference = dividor_data - divisor_data;
   // divisor
   always_ff @(posedge clk, negedge rst_n)
     if (!rst_n) divisor_data <= 16'h0000;
@@ -43,7 +43,7 @@ module SDiv (
     if (!rst_n) dividor_data <= 16'h0000;
     else if (init)
       dividor_data <= ((dividend[15]) ? (~dividend + 1) : dividend) - divisor_data; // include alu for calc
-    else if (!init) dividor_data <= dividor_data - divisor_data;  // including alu for calc
+    else dividor_data <= difference;  // including alu for calc
 
   // sign checker
   always_ff @(posedge clk, negedge rst_n)
@@ -67,6 +67,7 @@ module SDiv (
     init = 1'b0;
     rdy = 1'b0;
     quot_sel = 2'b00;
+    nxt_state = state;
 
     case (state)
       /* COMPUTE state: we are waiting for the MSB to become 1 to tell
@@ -74,10 +75,9 @@ module SDiv (
 			should go into the negate state, otherwise we should wait
 			*/
       COMPUTE:
-      if (~dividor_data[15]) begin
-        quot_sel  = 2'b01;
-        nxt_state = COMPUTE;
-      end else if (dividor_data[15]) begin
+      if (~difference[15]) begin
+        quot_sel = 2'b01;
+      end else begin
         quot_sel  = 2'b11;
         nxt_state = NEGATE;
       end
@@ -88,15 +88,13 @@ module SDiv (
 			*/
       NEGATE:
       if (~go) begin
-        if (negate_res & quotient[15]) begin
-          quot_sel  = 2'b10;
-          nxt_state = NEGATE;
-        end else if (~negate_res) begin
+        if (negate_res & ~quotient[15]) begin
+          quot_sel = 2'b10;
+        end else begin
           quot_sel = 2'b11;
+          rdy = 1'b1;
         end
-        rdy = 1'b1;
-        nxt_state = NEGATE;
-      end else if (go) begin
+      end else begin
         init = 1'b1;
         quot_sel = 2'b00;
         nxt_state = COMPUTE;
@@ -107,7 +105,7 @@ module SDiv (
       if (go) begin
         init = 1'b1;
         nxt_state = COMPUTE;
-      end else nxt_state = IDLE;
+      end
     endcase
   end
 
