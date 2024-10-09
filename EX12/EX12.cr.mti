@@ -1,12 +1,11 @@
-{I:/ECE 551/EX12/UART_tx.sv} {2 {vlog -work work -vopt -sv -stats=none {I:/ECE 551/EX12/UART_tx.sv}
+I:/ECE551/EX12/UART_tx.sv {1 {vlog -work work -vopt -sv -stats=none I:/ECE551/EX12/UART_tx.sv
 Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
 -- Compiling module UART_tx
-** Warning: I:/ECE 551/EX12/UART_tx.sv(61): (vlog-2182) 'state' might be read before written in always_comb or always @* block.
 
 Top level modules:
 	UART_tx
 
-} {} {}} {I:/ECE 551/EX12/UART_tx_tb.sv} {1 {vlog -work work -vopt -sv -stats=none {I:/ECE 551/EX12/UART_tx_tb.sv}
+} {} {}} I:/ECE551/EX12/UART_tx_tb.sv {1 {vlog -work work -vopt -sv -stats=none {I:\ECE551\EX12\UART_tx_tb.sv}
 Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
 -- Compiling module UART_tx_tb
 

@@ -1,0 +1,308 @@
+# Error opening I:\ECE 551\EX12\UART_tx_tb.sv
+# Path name 'I:\ECE 551\EX12\UART_tx_tb.sv' doesn't exist.
+# 0 compiles, 2 failed with no errors.
+# Compile of UART_tx.sv was successful with warnings.
+# Compile of UART_tx_tb.sv was successful.
+# 2 compiles, 0 failed with no errors.
+vsim work.UART_tx_tb
+# vsim work.UART_tx_tb 
+# Start time: 12:16:03 on Oct 09,2024
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Error (suppressible): I:/ECE551/EX12/UART_tx_tb.sv(6): (vopt-3053) Illegal output port connection for 'tx_done' (6th connection).
+# Optimization failed
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=1, Warnings=0.
+# Error loading design
+# End time: 12:16:07 on Oct 09,2024, Elapsed time: 0:00:04
+# Errors: 1, Warnings: 9
+# Compile of UART_tx.sv was successful with warnings.
+# Compile of UART_tx_tb.sv was successful.
+# 2 compiles, 0 failed with no errors.
+# Optimization canceled
+vsim work.UART_tx_tb
+# vsim work.UART_tx_tb 
+# Start time: 12:16:36 on Oct 09,2024
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Error (suppressible): I:/ECE551/EX12/UART_tx.sv(67): (vopt-7033) Variable 'state' driven in a combinational block, may not be driven by any other process. See I:/ECE551/EX12/UART_tx.sv(52).
+# ** Warning: I:/ECE551/EX12/UART_tx.sv(61): (vopt-2182) 'state' might be read before written in always_comb or always @* block.
+# Optimization failed
+# ** Error: (vopt-2064) Compiler back-end code generation process terminated with code 12.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=2, Warnings=1.
+# Error loading design
+# End time: 12:16:41 on Oct 09,2024, Elapsed time: 0:00:05
+# Errors: 2, Warnings: 3
+vsim work.UART_tx_tb -voptargs=+acc
+# vsim work.UART_tx_tb -voptargs="+acc" 
+# Start time: 12:17:16 on Oct 09,2024
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Error (suppressible): I:/ECE551/EX12/UART_tx.sv(67): (vopt-7033) Variable 'state' driven in a combinational block, may not be driven by any other process. See I:/ECE551/EX12/UART_tx.sv(52).
+# ** Warning: I:/ECE551/EX12/UART_tx.sv(61): (vopt-2182) 'state' might be read before written in always_comb or always @* block.
+# Optimization failed
+# ** Error: (vopt-2064) Compiler back-end code generation process terminated with code 12.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=2, Warnings=2.
+# Error loading design
+# End time: 12:17:20 on Oct 09,2024, Elapsed time: 0:00:04
+# Errors: 2, Warnings: 3
+# Compile of UART_tx.sv was successful.
+# Compile of UART_tx_tb.sv was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -voptargs=+acc work.UART_tx_tb
+# vsim -voptargs="+acc" work.UART_tx_tb 
+# Start time: 12:18:21 on Oct 09,2024
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.UART_tx_tb(fast)
+# Loading work.UART_tx(fast)
+add wave -position insertpoint  \
+sim:/UART_tx_tb/iDUT/clk \
+sim:/UART_tx_tb/iDUT/rst_n \
+sim:/UART_tx_tb/iDUT/TX \
+sim:/UART_tx_tb/iDUT/trmt \
+sim:/UART_tx_tb/iDUT/tx_data \
+sim:/UART_tx_tb/iDUT/tx_done \
+sim:/UART_tx_tb/iDUT/state \
+sim:/UART_tx_tb/iDUT/nxt_state \
+sim:/UART_tx_tb/iDUT/tx_shft_reg \
+sim:/UART_tx_tb/iDUT/init \
+sim:/UART_tx_tb/iDUT/shift \
+sim:/UART_tx_tb/iDUT/set_done \
+sim:/UART_tx_tb/iDUT/transmitting \
+sim:/UART_tx_tb/iDUT/baud_cnt \
+sim:/UART_tx_tb/iDUT/bit_cnt
+run -all
+# ** Note: $stop    : I:/ECE551/EX12/UART_tx_tb.sv(22)
+#    Time: 105 ns  Iteration: 1  Instance: /UART_tx_tb
+# Break in Module UART_tx_tb at I:/ECE551/EX12/UART_tx_tb.sv line 22
+# Compile of UART_tx.sv was successful.
+# Compile of UART_tx_tb.sv was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.UART_tx_tb(fast)
+# Loading work.UART_tx(fast)
+run -all
+# ** Note: $stop    : I:/ECE551/EX12/UART_tx_tb.sv(22)
+#    Time: 105 ns  Iteration: 1  Instance: /UART_tx_tb
+# Break in Module UART_tx_tb at I:/ECE551/EX12/UART_tx_tb.sv line 22
+# Compile of UART_tx.sv was successful.
+# Compile of UART_tx_tb.sv was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.UART_tx_tb(fast)
+# Loading work.UART_tx(fast)
+run -all
+# ** Note: $stop    : I:/ECE551/EX12/UART_tx_tb.sv(22)
+#    Time: 105 ns  Iteration: 1  Instance: /UART_tx_tb
+# Break in Module UART_tx_tb at I:/ECE551/EX12/UART_tx_tb.sv line 22
+# Compile of UART_tx.sv was successful.
+# Compile of UART_tx_tb.sv was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.UART_tx_tb(fast)
+# Loading work.UART_tx(fast)
+run -all
+# ** Note: $stop    : I:/ECE551/EX12/UART_tx_tb.sv(22)
+#    Time: 125 ns  Iteration: 1  Instance: /UART_tx_tb
+# Break in Module UART_tx_tb at I:/ECE551/EX12/UART_tx_tb.sv line 22
+# Compile of UART_tx.sv was successful.
+# Compile of UART_tx_tb.sv was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.UART_tx_tb(fast)
+# Loading work.UART_tx(fast)
+run -all
+# ** Note: $stop    : I:/ECE551/EX12/UART_tx_tb.sv(22)
+#    Time: 125 ns  Iteration: 1  Instance: /UART_tx_tb
+# Break in Module UART_tx_tb at I:/ECE551/EX12/UART_tx_tb.sv line 22
+# Compile of UART_tx.sv was successful.
+# Compile of UART_tx_tb.sv was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.UART_tx_tb(fast)
+# Loading work.UART_tx(fast)
+run -all
+# ** Note: $stop    : I:/ECE551/EX12/UART_tx_tb.sv(22)
+#    Time: 125 ns  Iteration: 1  Instance: /UART_tx_tb
+# Break in Module UART_tx_tb at I:/ECE551/EX12/UART_tx_tb.sv line 22
+# Compile of UART_tx.sv was successful.
+# Compile of UART_tx_tb.sv was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.UART_tx_tb(fast)
+# Loading work.UART_tx(fast)
+run -all
+# ** Note: $stop    : I:/ECE551/EX12/UART_tx_tb.sv(22)
+#    Time: 30005 ns  Iteration: 1  Instance: /UART_tx_tb
+# Break in Module UART_tx_tb at I:/ECE551/EX12/UART_tx_tb.sv line 22
+# Compile of UART_tx.sv was successful.
+# Compile of UART_tx_tb.sv was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.UART_tx_tb(fast)
+# Loading work.UART_tx(fast)
+run -all
+# ** Note: $stop    : I:/ECE551/EX12/UART_tx_tb.sv(22)
+#    Time: 208325 ns  Iteration: 1  Instance: /UART_tx_tb
+# Break in Module UART_tx_tb at I:/ECE551/EX12/UART_tx_tb.sv line 22
+# Compile of UART_tx.sv was successful.
+# Compile of UART_tx_tb.sv was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.UART_tx_tb(fast)
+# Loading work.UART_tx(fast)
+run -all
+# ** Note: $stop    : I:/ECE551/EX12/UART_tx_tb.sv(22)
+#    Time: 234365 ns  Iteration: 1  Instance: /UART_tx_tb
+# Break in Module UART_tx_tb at I:/ECE551/EX12/UART_tx_tb.sv line 22
+# Compile of UART_tx.sv was successful.
+# Compile of UART_tx_tb.sv was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.UART_tx_tb(fast)
+# Loading work.UART_tx(fast)
+run -all
+# ** Note: $stop    : I:/ECE551/EX12/UART_tx_tb.sv(22)
+#    Time: 260405 ns  Iteration: 1  Instance: /UART_tx_tb
+# Break in Module UART_tx_tb at I:/ECE551/EX12/UART_tx_tb.sv line 22
+# Compile of UART_tx.sv was successful.
+# Compile of UART_tx_tb.sv was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.UART_tx_tb(fast)
+# Loading work.UART_tx(fast)
+run -all
+# ** Note: $stop    : I:/ECE551/EX12/UART_tx_tb.sv(22)
+#    Time: 260405 ns  Iteration: 1  Instance: /UART_tx_tb
+# Break in Module UART_tx_tb at I:/ECE551/EX12/UART_tx_tb.sv line 22
+# Compile of UART_tx.sv was successful.
+# Compile of UART_tx_tb.sv was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.UART_tx_tb(fast)
+# Loading work.UART_tx(fast)
+run -all
+# ** Note: $stop    : I:/ECE551/EX12/UART_tx_tb.sv(22)
+#    Time: 260405 ns  Iteration: 1  Instance: /UART_tx_tb
+# Break in Module UART_tx_tb at I:/ECE551/EX12/UART_tx_tb.sv line 22
+# Compile of UART_tx.sv was successful.
+# Compile of UART_tx_tb.sv was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.UART_tx_tb(fast)
+# Loading work.UART_tx(fast)
+run -all
+# ** Note: $stop    : I:/ECE551/EX12/UART_tx_tb.sv(22)
+#    Time: 286445 ns  Iteration: 1  Instance: /UART_tx_tb
+# Break in Module UART_tx_tb at I:/ECE551/EX12/UART_tx_tb.sv line 22
+# Compile of UART_tx.sv was successful.
+# Compile of UART_tx_tb.sv was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.UART_tx_tb(fast)
+# Loading work.UART_tx(fast)
+run -all
+# ** Note: $stop    : I:/ECE551/EX12/UART_tx_tb.sv(24)
+#    Time: 286455 ns  Iteration: 1  Instance: /UART_tx_tb
+# Break in Module UART_tx_tb at I:/ECE551/EX12/UART_tx_tb.sv line 24
+# Compile of UART_tx.sv was successful.
+# Compile of UART_tx_tb.sv was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.UART_tx_tb(fast)
+# Loading work.UART_tx(fast)
+run -all
+# ** Note: $stop    : I:/ECE551/EX12/UART_tx_tb.sv(24)
+#    Time: 286455 ns  Iteration: 1  Instance: /UART_tx_tb
+# Break in Module UART_tx_tb at I:/ECE551/EX12/UART_tx_tb.sv line 24
+quit -sim
+# End time: 13:52:01 on Oct 09,2024, Elapsed time: 1:33:40
+# Errors: 0, Warnings: 2
+# reading C:/intelFPGA_lite/23.1std/questa_fse/win64/../modelsim.ini
+# Loading project EX13
+# Compile of UART_rx.sv failed with 2 errors.
+# Compile of UART_rx_tb.sv was successful.
+# 2 compiles, 1 failed with 2 errors.
+# Compile of UART_rx.sv failed with 2 errors.
+# Compile of UART_rx_tb.sv was successful.
+# 2 compiles, 1 failed with 2 errors.
+# Compile of UART_rx.sv failed with 30 errors.
+# Compile of UART_rx_tb.sv was successful.
+# 2 compiles, 1 failed with 30 errors.
+# Compile of UART_rx.sv failed with 30 errors.
+# Compile of UART_rx_tb.sv was successful.
+# 2 compiles, 1 failed with 30 errors.
+# Compile of UART_rx.sv failed with 3 errors.
+# Compile of UART_rx_tb.sv was successful.
+# 2 compiles, 1 failed with 3 errors.
+# Compile of UART_rx.sv was successful.
+# Compile of UART_rx_tb.sv was successful.
+# 2 compiles, 0 failed with no errors.

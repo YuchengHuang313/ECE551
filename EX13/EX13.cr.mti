@@ -1,0 +1,11 @@
+I:/ECE551/EX13/UART_rx.sv {1 {vlog -work work -vopt -sv -stats=none I:/ECE551/EX13/UART_rx.sv
+Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
+-- Compiling module UART_tx
+
+Top level modules:
+	UART_tx
+
+} {} {}} I:/ECE551/EX13/UART_rx_tb.sv {1 {vlog -work work -vopt -sv -stats=none I:/ECE551/EX13/UART_rx_tb.sv
+Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
+
+} {} {}}

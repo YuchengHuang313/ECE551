@@ -15,6 +15,7 @@ always_ff @(posedge clk, negedge rst_n)
 		tx_shft_reg <= {tx_data, 1'b0};
 	else if (shift == 1'b1)
 		tx_shft_reg <= {1'b1, tx_shft_reg[8:1]};
+assign TX = tx_shft_reg[0];
 
 // baud counter 	
 always_ff @(posedge clk, negedge rst_n)
@@ -26,7 +27,7 @@ always_ff @(posedge clk, negedge rst_n)
 		baud_cnt <= baud_cnt +1;
 
 // check if we have reach the hold period
-assign shift = baud_cnt == 12'd2604;
+assign shift = (baud_cnt == 12'd2604);
 
 // shift counter
 always_ff @(posedge clk, negedge rst_n)
@@ -64,10 +65,10 @@ always_comb begin
 		default:
 			if (trmt) begin
 				init = 1'b1;
-				state = CNT;
+				nxt_state = CNT;
 			end
 		CNT:
-			if (!bit_cnt != 4'd10) begin
+			if (bit_cnt != 4'd10) begin
 				transmitting = 1'b1;
 			end else begin
 				set_done = 1'b1;
