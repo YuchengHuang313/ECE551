@@ -1,6 +1,8 @@
 m255
 K4
 z2
+!s12c _opt
+Z0 !s99 nomlopt
 !s11f vlog 2023.3 2023.07, Jul 17 2023
 13
 !s112 1.1
@@ -8,30 +10,95 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-dC:/intelFPGA_lite/23.1std
-vUART_tx
-2I:/ECE551/EX13/UART_rx.sv
-DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
-!s110 1728500132
+Z1 dC:/intelFPGA_lite/23.1std
+T_opt
+!s110 1728669808
+VDFORnlK2zj7LG?^5mXZWZ3
+04 10 4 work UART_tx_tb fast 0
+=1-4cd717936f30-6709686f-73-2324
+R0
+!s12b OEM100
+!s124 OEM10U2 
+o-quiet -auto_acc_if_foreign -work work
+Z2 tCvgOpt 0
+n@_opt
+OL;O;2023.3;77
+R1
+vUART_tb
+2I:/ECE551/EX13/UART_tb.sv
+Z3 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+!s110 1728669875
 !i10b 1
-!s100 [00Z<nYoSZUb^:VD?Uj5W0
-ImCe3BEi2N`^VKSH9OJ1J?0
+!s100 =k]9FD2<Y4:E^A`2HEF[72
+IHmAZZYPFJ2BS4NLUTAg@l1
 S1
-dI:/ECE551/EX13
-w1728500127
-8I:/ECE551/EX13/UART_rx.sv
-FI:/ECE551/EX13/UART_rx.sv
-!i122 0
-L0 1 87
-VDg1SIo80bB@j0V0VzS_@n1
-OL;L;2023.3;77
+Z4 dI:/ECE551/EX13
+w1728669309
+8I:/ECE551/EX13/UART_tb.sv
+FI:/ECE551/EX13/UART_tb.sv
+!i122 25
+Z5 L0 1 28
+Z6 VDg1SIo80bB@j0V0VzS_@n1
+Z7 OL;L;2023.3;77
 r1
 !s85 0
 31
-!s108 1728500132.000000
-!s107 I:/ECE551/EX13/UART_rx.sv|
-!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|I:/ECE551/EX13/UART_rx.sv|
+!s108 1728669875.000000
+!s107 I:/ECE551/EX13/UART_tb.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|I:/ECE551/EX13/UART_tb.sv|
 !i113 0
-o-work work -sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
-tCvgOpt 0
+Z8 o-work work -sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R2
+n@u@a@r@t_tb
+vUART_tx
+2I:/ECE551/EX13/UART_tx.sv
+R3
+Z9 !s110 1728669876
+!i10b 1
+!s100 id^kAznDaT74mLl77FWF?2
+ImKjJlIQkfb<8Z7LA5_[hc3
+S1
+R4
+w1728495272
+8I:/ECE551/EX13/UART_tx.sv
+FI:/ECE551/EX13/UART_tx.sv
+!i122 26
+L0 1 79
+R6
+R7
+r1
+!s85 0
+31
+Z10 !s108 1728669876.000000
+!s107 I:/ECE551/EX13/UART_tx.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|I:/ECE551/EX13/UART_tx.sv|
+!i113 0
+R8
+R2
 n@u@a@r@t_tx
+vUART_tx_tb
+2I:/ECE551/EX13/UART_tx_tb.sv
+R3
+R9
+!i10b 1
+!s100 [QPf6Ym_MfJ3lKWnA:ilh3
+IbWN56SO>NW91XT9oKJnJn3
+S1
+R4
+w1728669789
+8I:/ECE551/EX13/UART_tx_tb.sv
+FI:/ECE551/EX13/UART_tx_tb.sv
+!i122 27
+R5
+R6
+R7
+r1
+!s85 0
+31
+R10
+!s107 I:/ECE551/EX13/UART_tx_tb.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|I:/ECE551/EX13/UART_tx_tb.sv|
+!i113 0
+R8
+R2
+n@u@a@r@t_tx_tb

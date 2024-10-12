@@ -20,7 +20,9 @@ assign rx_data = rx_shft_reg[7:0];
 always_ff @(posedge clk, negedge rst_n)
 	if (!rst_n)
 		baud_cnt <= 12'hfff;
-	else if (start|shift == 1'b1)
+	else if (start)
+		baud_cnt = 12'd1032;
+	else if (shift)
 		baud_cnt = 12'd2064;
 	else if (receiving)
 		baud_cnt <= baud_cnt - 1;
@@ -48,8 +50,8 @@ always_ff @(posedge clk, negedge rst_n)
 // RX double flop
 always_ff @(posedge clk, negedge rst_n)
 	if (!rst_n) begin
-		RX_flopped_1 <= 1'b0;
-		RX_flopped_2 <= 1'b0;
+		RX_flopped_1 <= 1'b1;
+		RX_flopped_2 <= 1'b1;
 	end else begin
 		RX_flopped_1 <= RX;
 		RX_flopped_2 <= RX_flopped_2;
