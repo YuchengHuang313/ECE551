@@ -8,6 +8,7 @@ logic signed [9:0] prev_err;
 logic signed [9:0] D_diff;
 logic signed [7:0] sat_8;
 
+// Double flop the err_sat
 always_ff @(posedge clk, negedge rst_n)
 	if (!rst_n) begin
 		ff1 <= 10'h000;
@@ -19,11 +20,15 @@ always_ff @(posedge clk, negedge rst_n)
 		prev_err <= ff2;
 	end
 
+// combinational calculation of D_diff
 assign D_diff = err_sat - prev_err;
+
+// Saturate the difference
 assign sat_8 = (~D_diff[9] & |D_diff[8:7]) ? 8'h7f 
 		: (D_diff[9] & ~&D_diff[8:7]) ? 8'h80 
 		: D_diff[7:0];
 
+// Divide the result is the same as mult by 1/D_COEFF
 assign D_term = sat_8 * D_COEFF; 
 
 endmodule 

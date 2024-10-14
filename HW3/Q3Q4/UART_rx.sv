@@ -73,14 +73,14 @@ always_comb begin
 	nxt_state = state;
 	
 		case(state)
-			CNT:
+			CNT: // wait till all 9 bit data has transferred
 				if (bit_cnt != 4'd10) begin
 					receiving = 1'b1;
                 end else begin
 					set_rdy = 1'b1;
 					nxt_state = IDLE;
                 end
-			default:
+			default: // IDLE state
 				if (~RX_flopped_2) begin
 					start = 1'b1;
 					nxt_state = CNT;

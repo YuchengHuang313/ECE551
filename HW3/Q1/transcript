@@ -1,0 +1,22 @@
+vsim -gui work.ss_A2D_tb
+# vsim -gui work.ss_A2D_tb 
+# Start time: 16:31:56 on Oct 14,2024
+# Loading work.ss_A2D_tb
+# Loading work.ss_A2D
+# Loading work.ss_A2D_datapath
+# Loading sv_std.std
+# Loading work.ss_A2D_SM
+run -all
+# YAHOO! test passed
+# ** Note: $stop    : C:/Users/83975/Desktop/ECE551/HW3/Q1/ss_A2D_tb.v(44)
+#    Time: 62360 ps  Iteration: 1  Instance: /ss_A2D_tb
+# Break in Module ss_A2D_tb at C:/Users/83975/Desktop/ECE551/HW3/Q1/ss_A2D_tb.v line 44
+restart
+add wave -position insertpoint sim:/ss_A2D_tb/iDUT/*
+run -all
+# YAHOO! test passed
+# ** Note: $stop    : C:/Users/83975/Desktop/ECE551/HW3/Q1/ss_A2D_tb.v(44)
+#    Time: 62360 ps  Iteration: 1  Instance: /ss_A2D_tb
+# Break in Module ss_A2D_tb at C:/Users/83975/Desktop/ECE551/HW3/Q1/ss_A2D_tb.v line 44
+# End time: 16:33:16 on Oct 14,2024, Elapsed time: 0:01:20
+# Errors: 0, Warnings: 1
