@@ -1,0 +1,12 @@
+{
+    "cSpell.enableFiletypes": [
+        "systemverilog",
+        "systemverilogheader"
+    ],
+    "cSpell.words": [
+        "localparam",
+        "negedge",
+        "posedge",
+        "trmt"
+    ]
+}

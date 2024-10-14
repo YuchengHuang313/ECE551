@@ -1,0 +1,37 @@
+# Compile of Dterm.sv was successful.
+# Compile of Dterm_tb.sv was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -gui work.Dterm_tb
+# vsim -gui work.Dterm_tb 
+# Start time: 00:40:38 on Oct 14,2024
+# Loading sv_std.std
+# Loading work.Dterm_tb
+# Loading work.Dterm
+add wave -position insertpoint sim:/Dterm_tb/iDUT/*
+run -all
+# ** Note: $stop    : C:/Users/83975/Desktop/ECE551/HW3/Q5/Dterm_tb.sv(25)
+#    Time: 140 ps  Iteration: 1  Instance: /Dterm_tb
+# Break in Module Dterm_tb at C:/Users/83975/Desktop/ECE551/HW3/Q5/Dterm_tb.sv line 25
+# Compile of Dterm.sv was successful.
+# Compile of Dterm_tb.sv was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.Dterm_tb
+# Loading work.Dterm
+# Warning in wave window restart: (vish-4014) No objects found matching '/Dterm_tb/iDUT/d1'. 
+# Warning in wave window restart: (vish-4014) No objects found matching '/Dterm_tb/iDUT/d2'. 
+# Warning in wave window restart: (vish-4014) No objects found matching '/Dterm_tb/iDUT/d3'. 
+# Warning in wave window restart: (vish-4014) No objects found matching '/Dterm_tb/iDUT/q1'. 
+# Warning in wave window restart: (vish-4014) No objects found matching '/Dterm_tb/iDUT/q2'. 
+add wave -position insertpoint sim:/Dterm_tb/iDUT/*
+# Compile of Dterm.sv was successful.
+# Compile of Dterm_tb.sv was successful.
+# 2 compiles, 0 failed with no errors.
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Note: $stop    : C:/Users/83975/Desktop/ECE551/HW3/Q5/Dterm_tb.sv(25)
+#    Time: 140 ps  Iteration: 1  Instance: /Dterm_tb
+# Break in Module Dterm_tb at C:/Users/83975/Desktop/ECE551/HW3/Q5/Dterm_tb.sv line 25

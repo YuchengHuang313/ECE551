@@ -1,0 +1,228 @@
+vsim -gui work.SDiv_tb
+# vsim -gui work.SDiv_tb 
+# Start time: 21:28:32 on Oct 13,2024
+# Loading sv_std.std
+# Loading work.SDiv_tb
+# Loading work.SDiv
+add wave -position insertpoint  \
+sim:/SDiv_tb/iDUT/clk \
+sim:/SDiv_tb/iDUT/rst_n \
+sim:/SDiv_tb/iDUT/go \
+sim:/SDiv_tb/iDUT/dividend \
+sim:/SDiv_tb/iDUT/divisor \
+sim:/SDiv_tb/iDUT/quotient \
+sim:/SDiv_tb/iDUT/rdy \
+sim:/SDiv_tb/iDUT/state \
+sim:/SDiv_tb/iDUT/nxt_state \
+sim:/SDiv_tb/iDUT/negate_res \
+sim:/SDiv_tb/iDUT/init \
+sim:/SDiv_tb/iDUT/divisor_data \
+sim:/SDiv_tb/iDUT/dividor_data \
+sim:/SDiv_tb/iDUT/difference \
+sim:/SDiv_tb/iDUT/quot_sel
+# Compile of SDiv.sv was successful.
+# Compile of SDiv_tb.sv was successful.
+# 2 compiles, 0 failed with no errors.
+run -all
+# Test Case 1 passed
+# Test Case 2 passed
+# Test Case 3 passed
+# Test Case 4 passed
+# Test Case 5 passed
+# ** Note: $stop    : C:/Users/83975/Desktop/ECE551/HW3/Q2/SDiv_tb.sv(101)
+#    Time: 1311120 ps  Iteration: 1  Instance: /SDiv_tb
+# Break in Module SDiv_tb at C:/Users/83975/Desktop/ECE551/HW3/Q2/SDiv_tb.sv line 101
+# Compile of SDiv.sv was successful.
+# Compile of SDiv_tb.sv was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.SDiv_tb
+# Loading work.SDiv
+# Compile of SDiv.sv was successful.
+# Compile of SDiv_tb.sv was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.SDiv_tb
+# Loading work.SDiv
+# Compile of SDiv.sv was successful.
+# Compile of SDiv_tb.sv was successful.
+# 2 compiles, 0 failed with no errors.
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Test Case 1 passed
+# Test Case 2 passed
+# Test Case 3 passed
+# Test Case 4 passed
+# Test Case 5 passed
+# Test Case 6 failed: rdy should be 1 but is not
+# ** Note: $stop    : C:/Users/83975/Desktop/ECE551/HW3/Q2/SDiv_tb.sv(117)
+#    Time: 1311190 ps  Iteration: 1  Instance: /SDiv_tb
+# Break in Module SDiv_tb at C:/Users/83975/Desktop/ECE551/HW3/Q2/SDiv_tb.sv line 117
+# Compile of SDiv.sv was successful.
+# Compile of SDiv_tb.sv was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.SDiv_tb
+# Loading work.SDiv
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Test Case 1 passed
+# Test Case 2 passed
+# Test Case 3 passed
+# Test Case 4 passed
+# Test Case 5 passed
+# Test Case 6 failed: 24 / 65530 should be 4, but got 65532
+# ** Note: $stop    : C:/Users/83975/Desktop/ECE551/HW3/Q2/SDiv_tb.sv(117)
+#    Time: 1311200 ps  Iteration: 1  Instance: /SDiv_tb
+# Break in Module SDiv_tb at C:/Users/83975/Desktop/ECE551/HW3/Q2/SDiv_tb.sv line 117
+# Compile of SDiv.sv was successful.
+# Compile of SDiv_tb.sv was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.SDiv_tb
+# Loading work.SDiv
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Test Case 1 passed
+# Test Case 2 passed
+# Test Case 3 passed
+# Test Case 4 failed: rdy should be 1 but is not
+# Test Case 5 passed
+# Test Case 6 failed: 24 / 65530 should be 4, but got 65532
+# ** Note: $stop    : C:/Users/83975/Desktop/ECE551/HW3/Q2/SDiv_tb.sv(117)
+#    Time: 655800 ps  Iteration: 1  Instance: /SDiv_tb
+# Break in Module SDiv_tb at C:/Users/83975/Desktop/ECE551/HW3/Q2/SDiv_tb.sv line 117
+restart
+# Compile of SDiv.sv was successful.
+# Compile of SDiv_tb.sv was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.SDiv_tb
+# Loading work.SDiv
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Test Case 1 passed
+# Test Case 2 passed
+# Test Case 3 passed
+# Test Case 4 passed
+# Test Case 5 passed
+# Test Case 6 failed: 24 / 65530 should be 4, but got 65532
+# ** Note: $stop    : C:/Users/83975/Desktop/ECE551/HW3/Q2/SDiv_tb.sv(117)
+#    Time: 655820 ps  Iteration: 1  Instance: /SDiv_tb
+# Break in Module SDiv_tb at C:/Users/83975/Desktop/ECE551/HW3/Q2/SDiv_tb.sv line 117
+# Compile of SDiv.sv was successful.
+# Compile of SDiv_tb.sv was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.SDiv_tb
+# Loading work.SDiv
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Test Case 1 passed
+# Test Case 2 passed
+# Test Case 3 passed
+# Test Case 4 passed
+# Test Case 5 passed
+# Test Case 6 failed: 24 / 65530 should be 4, but got 65532
+# ** Note: $stop    : C:/Users/83975/Desktop/ECE551/HW3/Q2/SDiv_tb.sv(117)
+#    Time: 655830 ps  Iteration: 1  Instance: /SDiv_tb
+# Break in Module SDiv_tb at C:/Users/83975/Desktop/ECE551/HW3/Q2/SDiv_tb.sv line 117
+# Compile of SDiv.sv was successful.
+# Compile of SDiv_tb.sv was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.SDiv_tb
+# Loading work.SDiv
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Test Case 1 passed
+# Test Case 2 passed
+# Test Case 3 passed
+# Test Case 4 passed
+# Test Case 5 passed
+# Test Case 6 failed: 24 / 65530 should be 4, but got 65532
+# ** Note: $stop    : C:/Users/83975/Desktop/ECE551/HW3/Q2/SDiv_tb.sv(117)
+#    Time: 655840 ps  Iteration: 1  Instance: /SDiv_tb
+# Break in Module SDiv_tb at C:/Users/83975/Desktop/ECE551/HW3/Q2/SDiv_tb.sv line 117
+# Compile of SDiv.sv was successful.
+# Compile of SDiv_tb.sv was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.SDiv_tb
+# Loading work.SDiv
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Test Case 1 passed
+# Test Case 2 passed
+# Test Case 3 passed
+# Test Case 4 passed
+# Test Case 5 passed
+# Test Case 6 failed: 24 / 65530 should be 4, but got 65532
+# ** Note: $stop    : C:/Users/83975/Desktop/ECE551/HW3/Q2/SDiv_tb.sv(117)
+#    Time: 655960 ps  Iteration: 1  Instance: /SDiv_tb
+# Break in Module SDiv_tb at C:/Users/83975/Desktop/ECE551/HW3/Q2/SDiv_tb.sv line 117
+restart
+restart
+# Compile of SDiv.sv was successful.
+# Compile of SDiv_tb.sv was successful.
+# 2 compiles, 0 failed with no errors.
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Test Case 1 passed
+# Test Case 2 passed
+# Test Case 3 passed
+# Test Case 4 passed
+# Test Case 5 passed
+# Test Case 6 failed: 24 / 65530 should be 4, but got 65532
+# ** Note: $stop    : C:/Users/83975/Desktop/ECE551/HW3/Q2/SDiv_tb.sv(117)
+#    Time: 655960 ps  Iteration: 1  Instance: /SDiv_tb
+# Break in Module SDiv_tb at C:/Users/83975/Desktop/ECE551/HW3/Q2/SDiv_tb.sv line 117
+# Compile of SDiv.sv was successful.
+# Compile of SDiv_tb.sv was successful.
+# 2 compiles, 0 failed with no errors.
+# Compile of SDiv.sv was successful.
+# Compile of SDiv_tb.sv was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.SDiv_tb
+# Loading work.SDiv
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Test Case 1 passed
+# Test Case 2 passed
+# Test Case 3 passed
+# Test Case 4 passed
+# Test Case 5 passed
+# Test Case 6 passed
+# ** Note: $stop    : C:/Users/83975/Desktop/ECE551/HW3/Q2/SDiv_tb.sv(117)
+#    Time: 655830 ps  Iteration: 1  Instance: /SDiv_tb
+# Break in Module SDiv_tb at C:/Users/83975/Desktop/ECE551/HW3/Q2/SDiv_tb.sv line 117
+# End time: 22:36:59 on Oct 13,2024, Elapsed time: 1:08:27
+# Errors: 0, Warnings: 1
