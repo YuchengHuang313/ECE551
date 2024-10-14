@@ -1,37 +1,48 @@
+# 0 compiles, 2 failed with no errors.
 # Compile of Dterm.sv was successful.
 # Compile of Dterm_tb.sv was successful.
 # 2 compiles, 0 failed with no errors.
-vsim -gui work.Dterm_tb
-# vsim -gui work.Dterm_tb 
-# Start time: 00:40:38 on Oct 14,2024
+vsim work.Dterm_tb
+# vsim work.Dterm_tb 
+# Start time: 11:49:04 on Oct 14,2024
+# ** Note: (vsim-3812) Design is being optimized...
 # Loading sv_std.std
-# Loading work.Dterm_tb
-# Loading work.Dterm
+# Loading work.Dterm_tb(fast)
+quit -sim
+# End time: 11:49:11 on Oct 14,2024, Elapsed time: 0:00:07
+# Errors: 0, Warnings: 7
+vsim work.Dterm_tb -voptargs=+acc
+# vsim work.Dterm_tb -voptargs="+acc" 
+# Start time: 11:49:20 on Oct 14,2024
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.Dterm_tb(fast)
+# Loading work.Dterm(fast)
 add wave -position insertpoint sim:/Dterm_tb/iDUT/*
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: 83975  Hostname: TARS  ProcessID: 23676
+#           Attempting to use alternate WLF file "./wlftkny63d".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftkny63d
 run -all
-# ** Note: $stop    : C:/Users/83975/Desktop/ECE551/HW3/Q5/Dterm_tb.sv(25)
+# ** Note: $stop    : I:/ECE551/HW3/Q5/Dterm_tb.sv(25)
 #    Time: 140 ps  Iteration: 1  Instance: /Dterm_tb
-# Break in Module Dterm_tb at C:/Users/83975/Desktop/ECE551/HW3/Q5/Dterm_tb.sv line 25
+# Break in Module Dterm_tb at I:/ECE551/HW3/Q5/Dterm_tb.sv line 25
 # Compile of Dterm.sv was successful.
 # Compile of Dterm_tb.sv was successful.
 # 2 compiles, 0 failed with no errors.
 restart
 # ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# Loading work.Dterm_tb
-# Loading work.Dterm
-# Warning in wave window restart: (vish-4014) No objects found matching '/Dterm_tb/iDUT/d1'. 
-# Warning in wave window restart: (vish-4014) No objects found matching '/Dterm_tb/iDUT/d2'. 
-# Warning in wave window restart: (vish-4014) No objects found matching '/Dterm_tb/iDUT/d3'. 
-# Warning in wave window restart: (vish-4014) No objects found matching '/Dterm_tb/iDUT/q1'. 
-# Warning in wave window restart: (vish-4014) No objects found matching '/Dterm_tb/iDUT/q2'. 
-add wave -position insertpoint sim:/Dterm_tb/iDUT/*
-# Compile of Dterm.sv was successful.
-# Compile of Dterm_tb.sv was successful.
-# 2 compiles, 0 failed with no errors.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.Dterm_tb(fast)
+# Loading work.Dterm(fast)
 run -all
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# ** Note: $stop    : C:/Users/83975/Desktop/ECE551/HW3/Q5/Dterm_tb.sv(25)
-#    Time: 140 ps  Iteration: 1  Instance: /Dterm_tb
-# Break in Module Dterm_tb at C:/Users/83975/Desktop/ECE551/HW3/Q5/Dterm_tb.sv line 25
+# err_sat did not change in the last 3 cycle, D_term should be 0, but it is 0000
+# ** Note: $stop    : I:/ECE551/HW3/Q5/Dterm_tb.sv(34)
+#    Time: 160 ps  Iteration: 1  Instance: /Dterm_tb
+# Break in Module Dterm_tb at I:/ECE551/HW3/Q5/Dterm_tb.sv line 34

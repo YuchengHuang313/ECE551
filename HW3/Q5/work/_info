@@ -1,63 +1,94 @@
 m255
 K4
 z2
-!s11f vlog 2020.1 2020.02, Feb 28 2020
+Z0 !s12c _opt1
+Z1 !s99 nomlopt
+R0
+R1
+!s12c _opt
+R1
+!s11f MIXED_VERSIONS
 13
 !s112 1.1
 !i10d 8192
 !i10e 25
 !i10f 100
 cModel Technology
-dC:/Users/83975/Desktop/ECE551/HW3/Q1
+Z2 dC:/Users/83975/Desktop/ECE551/HW3/Q1
+T_opt
+!s110 1728924547
+Vh7Qm7?Tm2G4_IFAim4]>o2
+Z3 04 8 4 work Dterm_tb fast 0
+=1-4cd71793bb10-670d4b82-13c-32f0
+R1
+Z4 !s12b OEM100
+Z5 !s124 OEM10U2 
+o-quiet -auto_acc_if_foreign -work work
+Z6 tCvgOpt 0
+n@_opt
+Z7 OL;O;2023.3;77
+R2
+T_opt1
+!s110 1728925564
+V;Qb<aJSU;lGKF?Df=^UnS0
+R3
+=2-4cd71793bb10-670d4f7b-d-1098
+R1
+R4
+R5
+o-quiet -auto_acc_if_foreign -work work +acc
+R6
+n@_opt1
+R7
 vDterm
-Z0 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-Z1 !s110 1728884622
+2I:/ECE551/HW3/Q5/Dterm.sv
+Z8 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+!s110 1728925560
 !i10b 1
 !s100 4GO?BUc48n;o`3Z6]@Kh_0
-Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
-I:@:]=G>`69>Ql]<H2e]4:1
-Z3 VDg1SIo80bB@j0V0VzS_@n1
+IgY:k>5m:bnN=>Yc39V5ee3
 S1
-Z4 dC:/Users/83975/Desktop/ECE551/HW3/Q5
-w1728884593
-8C:/Users/83975/Desktop/ECE551/HW3/Q5/Dterm.sv
-FC:/Users/83975/Desktop/ECE551/HW3/Q5/Dterm.sv
-!i122 4
-Z5 L0 1 29
-Z6 OV;L;2020.1;71
+Z9 dI:/ECE551/HW3/Q5
+w1728921587
+8I:/ECE551/HW3/Q5/Dterm.sv
+FI:/ECE551/HW3/Q5/Dterm.sv
+!i122 8
+L0 1 29
+Z10 VDg1SIo80bB@j0V0VzS_@n1
+Z11 OL;L;2023.3;77
 r1
 !s85 0
 31
-Z7 !s108 1728884622.000000
-!s107 C:/Users/83975/Desktop/ECE551/HW3/Q5/Dterm.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/83975/Desktop/ECE551/HW3/Q5/Dterm.sv|
-!i113 1
-Z8 o-work work -sv
-Z9 tCvgOpt 0
+Z12 !s108 1728925560.000000
+!s107 I:/ECE551/HW3/Q5/Dterm.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|I:/ECE551/HW3/Q5/Dterm.sv|
+!i113 0
+Z13 o-work work -sv
+R6
 n@dterm
 vDterm_tb
-R0
-R1
+2I:/ECE551/HW3/Q5/Dterm_tb.sv
+R8
+!s110 1728925561
 !i10b 1
-!s100 _S<aQ@9z^]=ER>M5B=TN53
-R2
-IdP_DdDmkjElS76AdChh=g1
-R3
+!s100 km10@Uo[i7=:14DF2OdEd2
+I?7aHNPDgSRm5D@:=dkkTZ0
 S1
-R4
-w1728884359
-8C:/Users/83975/Desktop/ECE551/HW3/Q5/Dterm_tb.sv
-FC:/Users/83975/Desktop/ECE551/HW3/Q5/Dterm_tb.sv
-!i122 5
-R5
-R6
+R9
+w1728925552
+8I:/ECE551/HW3/Q5/Dterm_tb.sv
+FI:/ECE551/HW3/Q5/Dterm_tb.sv
+!i122 9
+L0 1 38
+R10
+R11
 r1
 !s85 0
 31
-R7
-!s107 C:/Users/83975/Desktop/ECE551/HW3/Q5/Dterm_tb.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/83975/Desktop/ECE551/HW3/Q5/Dterm_tb.sv|
-!i113 1
-R8
-R9
+R12
+!s107 I:/ECE551/HW3/Q5/Dterm_tb.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|I:/ECE551/HW3/Q5/Dterm_tb.sv|
+!i113 0
+R13
+R6
 n@dterm_tb
