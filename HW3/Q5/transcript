@@ -1,19 +1,22 @@
-# 0 compiles, 2 failed with no errors.
+vsim work.Dterm_tb -voptargs=+acc
+# vsim work.Dterm_tb -voptargs="+acc" 
+# Start time: 15:59:36 on Oct 14,2024
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Error (suppressible): I:/ECE551/HW3/Q5/Dterm_tb.sv(62): (vopt-7063) Failed to find 'display' in hierarchical name 'display'.
+#         Region: Dterm_tb
+# Optimization failed
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=1, Warnings=1.
+# Error loading design
+# End time: 15:59:37 on Oct 14,2024, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 2
 # Compile of Dterm.sv was successful.
 # Compile of Dterm_tb.sv was successful.
 # 2 compiles, 0 failed with no errors.
-vsim work.Dterm_tb
-# vsim work.Dterm_tb 
-# Start time: 11:49:04 on Oct 14,2024
-# ** Note: (vsim-3812) Design is being optimized...
-# Loading sv_std.std
-# Loading work.Dterm_tb(fast)
-quit -sim
-# End time: 11:49:11 on Oct 14,2024, Elapsed time: 0:00:07
-# Errors: 0, Warnings: 7
-vsim work.Dterm_tb -voptargs=+acc
-# vsim work.Dterm_tb -voptargs="+acc" 
-# Start time: 11:49:20 on Oct 14,2024
+# Optimization canceled
+vsim -voptargs=+acc work.Dterm_tb
+# vsim -voptargs="+acc" work.Dterm_tb 
+# Start time: 16:00:08 on Oct 14,2024
 # ** Note: (vsim-3812) Design is being optimized...
 # ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
 # ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
@@ -23,26 +26,17 @@ vsim work.Dterm_tb -voptargs=+acc
 add wave -position insertpoint sim:/Dterm_tb/iDUT/*
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 #           File in use by: 83975  Hostname: TARS  ProcessID: 23676
-#           Attempting to use alternate WLF file "./wlftkny63d".
+#           Attempting to use alternate WLF file "./wlfty6ksd6".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlftkny63d
+#           Using alternate file: ./wlfty6ksd6
 run -all
-# ** Note: $stop    : I:/ECE551/HW3/Q5/Dterm_tb.sv(25)
-#    Time: 140 ps  Iteration: 1  Instance: /Dterm_tb
-# Break in Module Dterm_tb at I:/ECE551/HW3/Q5/Dterm_tb.sv line 25
-# Compile of Dterm.sv was successful.
-# Compile of Dterm_tb.sv was successful.
-# 2 compiles, 0 failed with no errors.
-restart
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
-# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
-# Loading sv_std.std
-# Loading work.Dterm_tb(fast)
-# Loading work.Dterm(fast)
-run -all
-# err_sat did not change in the last 3 cycle, D_term should be 0, but it is 0000
-# ** Note: $stop    : I:/ECE551/HW3/Q5/Dterm_tb.sv(34)
-#    Time: 160 ps  Iteration: 1  Instance: /Dterm_tb
-# Break in Module Dterm_tb at I:/ECE551/HW3/Q5/Dterm_tb.sv line 34
+# Test Case 1 Passed
+# Test Case 2 Passed
+# Test Case 3 Passed
+# Test Case 4 passed
+# Test Case 5 passed
+# ** Note: $stop    : I:/ECE551/HW3/Q5/Dterm_tb.sv(67)
+#    Time: 320 ps  Iteration: 1  Instance: /Dterm_tb
+# Break in Module Dterm_tb at I:/ECE551/HW3/Q5/Dterm_tb.sv line 67
+# End time: 16:00:43 on Oct 14,2024, Elapsed time: 0:00:35
+# Errors: 0, Warnings: 5
