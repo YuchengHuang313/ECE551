@@ -1,11 +1,11 @@
-module UART_wrapper (input clr_cmd_rdy, input RX, input trmt, input [7:0] resp, 
+module UART_wrapper (input clr_cmd_rdy, input RX, input trmt, input [7:0] resp, input clk, input rst_n, 
 						output logic cmd_rdy, output logic [15:0] cmd, output tx_done, output TX);
 
-logic rx_rdy, clr_rdy;
-logic [7:0] rx_data, tx_data;
+logic rx_rdy, clr_rx_rdy;
+logic [7:0] rx_data;
 
-UART uart(.rx_rdy(rx_rdy), .rx_data(rx_data), .clr_rdy(clr_rdy), .trmt(trmt), 
-			.tx_data(tx_data), .tx_done(tx_done), .clk(clk), .rst_n(rst_n), .RX(RX), .TX(TX));
+UART uart(.rx_rdy(rx_rdy), .rx_data(rx_data), .clr_rx_rdy(clr_rx_rdy), .trmt(trmt), 
+			.tx_data(resp), .tx_done(tx_done), .clk(clk), .rst_n(rst_n), .RX(RX), .TX(TX));
 
 // FSM states
 typedef enum logic {HIGH, LOW} state_t;
@@ -40,21 +40,21 @@ always_ff @(posedge clk, negedge rst_n)
 		
 always_comb begin
 	byte_sel = 1'b0;
-	clr_rdy = 1'b0;
+	clr_rx_rdy = 1'b0;
 	set_cmd_rdy = 1'b0;
 	nxt_state = state;
 	case(state)
 		default: // HIGH state
 			if (rx_rdy) begin
 				byte_sel = 1'b1;
-				clr_rdy = 1'b1;
+				clr_rx_rdy = 1'b1;
 				nxt_state = LOW;
 			end
 			
 		LOW: 
 			if (rx_rdy) begin
 				set_cmd_rdy = 1'b1;
-				clr_rdy = 1'b1;
+				clr_rx_rdy = 1'b1;
 				nxt_state = HIGH;
 			end 
 	endcase
