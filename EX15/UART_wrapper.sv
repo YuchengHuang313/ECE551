@@ -46,7 +46,7 @@ always_comb begin
 	case(state)
 		default: // HIGH state
 			if (rx_rdy) begin
-				byte_sel = 1'b1;
+				byte_sel = 1'b0;
 				clr_rx_rdy = 1'b1;
 				nxt_state = LOW;
 			end
@@ -56,7 +56,8 @@ always_comb begin
 				set_cmd_rdy = 1'b1;
 				clr_rx_rdy = 1'b1;
 				nxt_state = HIGH;
-			end 
+			end else 
+				byte_sel = 1'b0;
 	endcase
 end
 

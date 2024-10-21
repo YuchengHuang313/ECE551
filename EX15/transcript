@@ -1,0 +1,200 @@
+# Compile of CommTB.sv was successful.
+# Compile of RemoteComm.sv failed with 1 errors.
+# Compile of UART.sv was successful.
+# Compile of UART_rx.sv was successful.
+# Compile of UART_tx.sv was successful.
+# Compile of UART_wrapper.sv failed with 1 errors.
+# 6 compiles, 2 failed with 2 errors.
+# Compile of CommTB.sv was successful.
+# Compile of RemoteComm.sv failed with 1 errors.
+# Compile of UART.sv was successful.
+# Compile of UART_rx.sv was successful.
+# Compile of UART_tx.sv was successful.
+# Compile of UART_wrapper.sv was successful.
+# 6 compiles, 1 failed with 1 error.
+# Compile of CommTB.sv was successful.
+# Compile of RemoteComm.sv failed with 2 errors.
+# Compile of UART.sv was successful.
+# Compile of UART_rx.sv was successful.
+# Compile of UART_tx.sv was successful.
+# Compile of UART_wrapper.sv was successful.
+# 6 compiles, 1 failed with 2 errors.
+# Compile of CommTB.sv was successful.
+# Compile of RemoteComm.sv failed with 1 errors.
+# Compile of UART.sv was successful.
+# Compile of UART_rx.sv was successful.
+# Compile of UART_tx.sv was successful.
+# Compile of UART_wrapper.sv was successful.
+# 6 compiles, 1 failed with 1 error.
+# Compile of CommTB.sv was successful.
+# Compile of RemoteComm.sv failed with 1 errors.
+# Compile of UART.sv was successful.
+# Compile of UART_rx.sv was successful.
+# Compile of UART_tx.sv was successful.
+# Compile of UART_wrapper.sv was successful.
+# 6 compiles, 1 failed with 1 error.
+# Compile of CommTB.sv was successful.
+# Compile of RemoteComm.sv failed with 1 errors.
+# Compile of UART.sv was successful.
+# Compile of UART_rx.sv was successful.
+# Compile of UART_tx.sv was successful.
+# Compile of UART_wrapper.sv was successful.
+# 6 compiles, 1 failed with 1 error.
+# Compile of CommTB.sv was successful.
+# Compile of RemoteComm.sv failed with 3 errors.
+# Compile of UART.sv was successful.
+# Compile of UART_rx.sv was successful.
+# Compile of UART_tx.sv was successful.
+# Compile of UART_wrapper.sv was successful.
+# 6 compiles, 1 failed with 3 errors.
+# Compile of CommTB.sv was successful.
+# Compile of RemoteComm.sv was successful.
+# Compile of UART.sv was successful.
+# Compile of UART_rx.sv was successful.
+# Compile of UART_tx.sv was successful.
+# Compile of UART_wrapper.sv was successful.
+# 6 compiles, 0 failed with no errors.
+# Optimization canceled
+# Compile of CommTB.sv was successful.
+# Compile of RemoteComm.sv was successful.
+# Compile of UART.sv was successful.
+# Compile of UART_rx.sv was successful.
+# Compile of UART_tx.sv was successful.
+# Compile of UART_wrapper.sv was successful.
+# 6 compiles, 0 failed with no errors.
+# Compile of CommTB.sv failed with 1 errors.
+# Compile of RemoteComm.sv was successful.
+# Compile of UART.sv was successful.
+# Compile of UART_rx.sv was successful.
+# Compile of UART_tx.sv was successful.
+# Compile of UART_wrapper.sv was successful.
+# 6 compiles, 1 failed with 1 error.
+# Compile of CommTB.sv was successful.
+# Compile of RemoteComm.sv was successful.
+# Compile of UART.sv was successful.
+# Compile of UART_rx.sv was successful.
+# Compile of UART_tx.sv was successful.
+# Compile of UART_wrapper.sv was successful.
+# 6 compiles, 0 failed with no errors.
+# Compile of CommTB.sv was successful.
+# Compile of RemoteComm.sv was successful.
+# Compile of UART.sv was successful.
+# Compile of UART_rx.sv was successful.
+# Compile of UART_tx.sv was successful.
+# Compile of UART_wrapper.sv was successful.
+# 6 compiles, 0 failed with no errors.
+# Optimization canceled
+# Compile of CommTB.sv was successful.
+# Compile of RemoteComm.sv was successful.
+# Compile of UART.sv was successful.
+# Compile of UART_rx.sv was successful.
+# Compile of UART_tx.sv was successful.
+# Compile of UART_wrapper.sv was successful.
+# 6 compiles, 0 failed with no errors.
+vsim work.CommTB -voptargs=+acc
+# vsim work.CommTB -voptargs="+acc" 
+# Start time: 13:02:40 on Oct 21,2024
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Warning: I:/ECE551/EX15/RemoteComm.sv(10): (vopt-2685) [TFMPC] - Too few port connections for 'uart_tc'.  Expected 10, found 9.
+# ** Warning: I:/ECE551/EX15/RemoteComm.sv(10): (vopt-2718) [TFMPC] - Missing connection for port 'clr_rx_rdy'.
+# ** Note: (vopt-143) Recognized 1 FSM in module "RemoteComm(fast)".
+# ** Warning: I:/ECE551/EX15/CommTB.sv(6): (vopt-2685) [TFMPC] - Too few port connections for 'rc'.  Expected 7, found 6.
+# ** Warning: I:/ECE551/EX15/CommTB.sv(6): (vopt-2718) [TFMPC] - Missing connection for port 'RX'.
+# ** Warning: I:/ECE551/EX15/CommTB.sv(7): (vopt-2685) [TFMPC] - Too few port connections for 'wrp'.  Expected 10, found 6.
+# ** Warning: I:/ECE551/EX15/CommTB.sv(7): (vopt-2718) [TFMPC] - Missing connection for port 'TX'.
+# ** Warning: I:/ECE551/EX15/CommTB.sv(7): (vopt-2718) [TFMPC] - Missing connection for port 'tx_done'.
+# ** Warning: I:/ECE551/EX15/CommTB.sv(7): (vopt-2718) [TFMPC] - Missing connection for port 'resp'.
+# ** Warning: I:/ECE551/EX15/CommTB.sv(7): (vopt-2718) [TFMPC] - Missing connection for port 'trmt'.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=10.
+# Loading sv_std.std
+# Loading work.CommTB(fast)
+# Loading work.RemoteComm(fast)
+# Loading work.UART(fast)
+# Loading work.UART_tx(fast)
+# Loading work.UART_rx(fast)
+# Loading work.UART_wrapper(fast)
+add wave -position insertpoint sim:/CommTB/*
+run -all
+# ** Note: $stop    : I:/ECE551/EX15/CommTB.sv(25)
+#    Time: 210 ns  Iteration: 1  Instance: /CommTB
+# Break in Module CommTB at I:/ECE551/EX15/CommTB.sv line 25
+add wave -position insertpoint sim:/CommTB/rc/*
+add wave -position insertpoint sim:/CommTB/wrp/*
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=10.
+# Loading work.CommTB(fast)
+# Loading work.RemoteComm(fast)
+# Loading work.UART(fast)
+# Loading work.UART_tx(fast)
+# Loading work.UART_rx(fast)
+# Loading work.UART_wrapper(fast)
+run -all
+# ** Note: $stop    : I:/ECE551/EX15/CommTB.sv(25)
+#    Time: 210 ns  Iteration: 1  Instance: /CommTB
+# Break in Module CommTB at I:/ECE551/EX15/CommTB.sv line 25
+# Compile of CommTB.sv was successful.
+# Compile of RemoteComm.sv failed with 1 errors.
+# Compile of UART.sv was successful.
+# Compile of UART_rx.sv was successful.
+# Compile of UART_tx.sv was successful.
+# Compile of UART_wrapper.sv was successful.
+# 6 compiles, 1 failed with 1 error.
+# Compile of CommTB.sv was successful.
+# Compile of RemoteComm.sv was successful.
+# Compile of UART.sv was successful.
+# Compile of UART_rx.sv was successful.
+# Compile of UART_tx.sv was successful.
+# Compile of UART_wrapper.sv was successful.
+# 6 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Warning: I:/ECE551/EX15/RemoteComm.sv(10): (vopt-2685) [TFMPC] - Too few port connections for 'uart_tc'.  Expected 10, found 9.
+# ** Warning: I:/ECE551/EX15/RemoteComm.sv(10): (vopt-2718) [TFMPC] - Missing connection for port 'clr_rx_rdy'.
+# ** Note: (vopt-143) Recognized 1 FSM in module "RemoteComm(fast)".
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=3.
+# Loading sv_std.std
+# Loading work.CommTB(fast)
+# Loading work.RemoteComm(fast)
+# Loading work.UART(fast)
+# Loading work.UART_tx(fast)
+# Loading work.UART_rx(fast)
+# Loading work.UART_wrapper(fast)
+run -all
+# ** Note: $stop    : I:/ECE551/EX15/CommTB.sv(25)
+#    Time: 210 ns  Iteration: 1  Instance: /CommTB
+# Break in Module CommTB at I:/ECE551/EX15/CommTB.sv line 25
+# Compile of CommTB.sv was successful.
+# Compile of RemoteComm.sv was successful.
+# Compile of UART.sv was successful.
+# Compile of UART_rx.sv was successful.
+# Compile of UART_tx.sv was successful.
+# Compile of UART_wrapper.sv was successful.
+# 6 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Warning: I:/ECE551/EX15/CommTB.sv(6): (vopt-2685) [TFMPC] - Too few port connections for 'rc'.  Expected 7, found 6.
+# ** Warning: I:/ECE551/EX15/CommTB.sv(6): (vopt-2718) [TFMPC] - Missing connection for port 'RX'.
+# ** Warning: I:/ECE551/EX15/CommTB.sv(7): (vopt-2685) [TFMPC] - Too few port connections for 'wrp'.  Expected 10, found 6.
+# ** Warning: I:/ECE551/EX15/CommTB.sv(7): (vopt-2718) [TFMPC] - Missing connection for port 'TX'.
+# ** Warning: I:/ECE551/EX15/CommTB.sv(7): (vopt-2718) [TFMPC] - Missing connection for port 'tx_done'.
+# ** Warning: I:/ECE551/EX15/CommTB.sv(7): (vopt-2718) [TFMPC] - Missing connection for port 'resp'.
+# ** Warning: I:/ECE551/EX15/CommTB.sv(7): (vopt-2718) [TFMPC] - Missing connection for port 'trmt'.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=8.
+# Loading sv_std.std
+# Loading work.CommTB(fast)
+# Loading work.RemoteComm(fast)
+# Loading work.UART(fast)
+# Loading work.UART_tx(fast)
+# Loading work.UART_rx(fast)
+# Loading work.UART_wrapper(fast)
+run -all
+# ** Note: $stop    : I:/ECE551/EX15/CommTB.sv(25)
+#    Time: 600010 ns  Iteration: 1  Instance: /CommTB
+# Break in Module CommTB at I:/ECE551/EX15/CommTB.sv line 25
