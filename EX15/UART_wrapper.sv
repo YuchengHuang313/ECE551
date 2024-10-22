@@ -17,7 +17,7 @@ logic byte_sel, set_cmd_rdy;
 // dataflow within the wrapper
 always_ff @(posedge clk, negedge rst_n)
 	if (!rst_n)
-		high_byte <= 2'h0;
+		high_byte <= 8'h0;
 	else if (byte_sel)
 		high_byte <= rx_data;
 assign cmd = {high_byte, rx_data};
@@ -38,27 +38,28 @@ always_ff @(posedge clk, negedge rst_n)
 	else 
 		state <= nxt_state;
 		
+// FSM logic
 always_comb begin
-	byte_sel = 1'b1;
-	clr_rx_rdy = 1'b0;
-	set_cmd_rdy = 1'b0;
-	nxt_state = state;
-	case(state)
-		default: // HIGH state
-			if (rx_rdy) begin
-				byte_sel = 1'b0;
-				clr_rx_rdy = 1'b1;
-				nxt_state = LOW;
-			end
-			
-		LOW: 
-			if (rx_rdy) begin
-				set_cmd_rdy = 1'b1;
-				clr_rx_rdy = 1'b1;
-				nxt_state = HIGH;
-			end else 
-				byte_sel = 1'b0;
-	endcase
+    byte_sel = 1'b0; // Default to 0
+    clr_rx_rdy = 1'b0;
+    set_cmd_rdy = 1'b0;
+    nxt_state = state;
+
+    case(state)
+        default: // Waiting for high byte reception
+            if (rx_rdy) begin
+                byte_sel = 1'b1; // Capture the high byte
+                clr_rx_rdy = 1'b1;
+                nxt_state = LOW;
+            end
+
+        LOW: // Waiting for low byte reception
+            if (rx_rdy) begin
+                set_cmd_rdy = 1'b1;
+                clr_rx_rdy = 1'b1;
+                nxt_state = HIGH;
+            end
+    endcase
 end
 
 endmodule		

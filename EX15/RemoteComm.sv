@@ -67,8 +67,7 @@ always_comb	begin
 			if (tx_done) begin
 				set_cmd_snt = 1'b1;
 				nxt_state = IDLE;
-			end else 
-				sel_high = 1'b0;
+			end 
 	endcase	
 end
 endmodule
