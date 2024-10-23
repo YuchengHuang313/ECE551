@@ -1,12 +1,54 @@
 m255
 K4
 z2
-!s11f MIXED_VERSIONS
-Z0 !s12c _opt
+Z0 !s12c _opt1
 Z1 !s99 nomlopt
 R0
 R1
 R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+!s11f MIXED_VERSIONS
+Z2 !s12c _opt
+R1
+R2
+R1
+R2
 R1
 13
 !s112 1.1
@@ -14,173 +56,185 @@ R1
 !i10e 25
 !i10f 100
 cModel Technology
-Z2 dC:/intelFPGA_lite/23.1std
+Z3 dC:/intelFPGA_lite/23.1std
 T_opt
 !s110 1729534004
 V^eMXEi0j16]8=29>7jhGW2
-04 6 4 work CommTB fast 0
+Z4 04 6 4 work CommTB fast 0
 =4-4cd71793bb10-67169833-152-4ed0
 R1
-!s12b OEM100
-!s124 OEM10U9 
-o-quiet -auto_acc_if_foreign -work work +acc
-Z3 tCvgOpt 0
+Z5 !s12b OEM100
+Z6 !s124 OEM10U9 
+Z7 o-quiet -auto_acc_if_foreign -work work +acc
+Z8 tCvgOpt 0
 n@_opt
-OL;O;2023.3;77
-R2
+Z9 OL;O;2023.3;77
+R3
+T_opt1
+!s110 1729705100
+VOXnE1V]l[eRbk24I]6`602
+R4
+=26-4cd71793b78c-6719348b-24e-3be8
+R1
+R5
+R6
+R7
+R8
+n@_opt1
+R9
 vCommTB
-Z4 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-Z5 !s110 1729547065
+2I:/ECE551/EX15/CommTB.sv
+Z10 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+Z11 !s110 1729705094
 !i10b 1
-!s100 Q0^^]QSE;Hcoc?aXc32Wo0
-Z6 !s11b Dg1SIo80bB@j0V0VzS_@n1
-I1omSQ]4>Z8z]jbAnTS>[02
-Z7 VDg1SIo80bB@j0V0VzS_@n1
+!s100 6R=9jT75YKS=D_JKHHDfC1
+IF_6C6=TSmCofWNVaET2C`2
 S1
-Z8 dC:/Users/83975/Desktop/ECE551/EX15
-Z9 w1729544174
-8C:/Users/83975/Desktop/ECE551/EX15/CommTB.sv
-FC:/Users/83975/Desktop/ECE551/EX15/CommTB.sv
-!i122 101
-L0 1 27
-Z10 OV;L;2020.1;71
+Z12 dI:/ECE551/EX15
+w1729705092
+8I:/ECE551/EX15/CommTB.sv
+FI:/ECE551/EX15/CommTB.sv
+!i122 251
+L0 1 57
+Z13 VDg1SIo80bB@j0V0VzS_@n1
+Z14 OL;L;2023.3;77
 r1
 !s85 0
 31
-Z11 !s108 1729547065.000000
-!s107 C:/Users/83975/Desktop/ECE551/EX15/CommTB.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/83975/Desktop/ECE551/EX15/CommTB.sv|
-!i113 1
-Z12 o-work work -sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
-R3
+Z15 !s108 1729705094.000000
+!s107 I:/ECE551/EX15/CommTB.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|I:/ECE551/EX15/CommTB.sv|
+!i113 0
+Z16 o-work work -sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R8
 n@comm@t@b
 vRemoteComm
-R4
-R5
-!i10b 1
-!s100 YaHPF>gCU<^ikQ4=PD]>`1
-R6
-IF;;H:P`AH05Dh6<5U:^Io2
-R7
-S1
-R8
-w1729547063
-8C:/Users/83975/Desktop/ECE551/EX15/RemoteComm.sv
-FC:/Users/83975/Desktop/ECE551/EX15/RemoteComm.sv
-!i122 102
-L0 1 73
+2I:/ECE551/EX15/RemoteComm.sv
 R10
+R11
+!i10b 1
+!s100 CGCkHXL0gc@P<oP<=WYF_2
+IVDKjCUSIQ@]>[oWNl39]F1
+S1
+R12
+w1729704138
+8I:/ECE551/EX15/RemoteComm.sv
+FI:/ECE551/EX15/RemoteComm.sv
+!i122 252
+L0 1 63
+R13
+R14
 r1
 !s85 0
 31
-R11
-!s107 C:/Users/83975/Desktop/ECE551/EX15/RemoteComm.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/83975/Desktop/ECE551/EX15/RemoteComm.sv|
-!i113 1
-R12
-R3
+R15
+!s107 I:/ECE551/EX15/RemoteComm.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|I:/ECE551/EX15/RemoteComm.sv|
+!i113 0
+R16
+R8
 n@remote@comm
 vUART
-R4
-R5
+2I:/ECE551/EX15/UART.sv
+R10
+Z17 !s110 1729705095
 !i10b 1
 !s100 _7MZO406PgMj>ab_NZQ<b3
-R6
-IQzWJZ=9^XD@I>:IDolGM=0
-R7
+I6I]?JI@dclKdi9@?>QdAk1
 S1
-R8
-R9
-8C:/Users/83975/Desktop/ECE551/EX15/UART.sv
-FC:/Users/83975/Desktop/ECE551/EX15/UART.sv
-!i122 103
+R12
+Z18 w1729700618
+8I:/ECE551/EX15/UART.sv
+FI:/ECE551/EX15/UART.sv
+!i122 253
 L0 1 25
-R10
+R13
+R14
 r1
 !s85 0
 31
-R11
-!s107 C:/Users/83975/Desktop/ECE551/EX15/UART.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/83975/Desktop/ECE551/EX15/UART.sv|
-!i113 1
-R12
-R3
+Z19 !s108 1729705095.000000
+!s107 I:/ECE551/EX15/UART.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|I:/ECE551/EX15/UART.sv|
+!i113 0
+R16
+R8
 n@u@a@r@t
 vUART_rx
-R4
-R5
+2I:/ECE551/EX15/UART_rx.sv
+R10
+R17
 !i10b 1
 !s100 Ln0?;4OG:^@]Y]b2W@h5H0
-R6
-I_P;YeUo:OE[fD0Q0lC@1k0
-R7
+ICaT5Y=RaX8;4[YYRd39932
 S1
-R8
-R9
-8C:/Users/83975/Desktop/ECE551/EX15/UART_rx.sv
-FC:/Users/83975/Desktop/ECE551/EX15/UART_rx.sv
-!i122 104
+R12
+R18
+8I:/ECE551/EX15/UART_rx.sv
+FI:/ECE551/EX15/UART_rx.sv
+!i122 254
 L0 1 90
-R10
+R13
+R14
 r1
 !s85 0
 31
-R11
-!s107 C:/Users/83975/Desktop/ECE551/EX15/UART_rx.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/83975/Desktop/ECE551/EX15/UART_rx.sv|
-!i113 1
-R12
-R3
+R19
+!s107 I:/ECE551/EX15/UART_rx.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|I:/ECE551/EX15/UART_rx.sv|
+!i113 0
+R16
+R8
 n@u@a@r@t_rx
 vUART_tx
-R4
-Z13 !s110 1729547066
+2I:/ECE551/EX15/UART_tx.sv
+R10
+Z20 !s110 1729705096
 !i10b 1
 !s100 id^kAznDaT74mLl77FWF?2
-R6
-IREPSoVSPMMBL2R[k50[_B0
-R7
+I133:6fH1=>HEnBI=n03@]3
 S1
-R8
-R9
-8C:/Users/83975/Desktop/ECE551/EX15/UART_tx.sv
-FC:/Users/83975/Desktop/ECE551/EX15/UART_tx.sv
-!i122 105
+R12
+R18
+8I:/ECE551/EX15/UART_tx.sv
+FI:/ECE551/EX15/UART_tx.sv
+!i122 255
 L0 1 79
-R10
+R13
+R14
 r1
 !s85 0
 31
-R11
-!s107 C:/Users/83975/Desktop/ECE551/EX15/UART_tx.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/83975/Desktop/ECE551/EX15/UART_tx.sv|
-!i113 1
-R12
-R3
+R19
+!s107 I:/ECE551/EX15/UART_tx.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|I:/ECE551/EX15/UART_tx.sv|
+!i113 0
+R16
+R8
 n@u@a@r@t_tx
 vUART_wrapper
-R4
-R13
+2I:/ECE551/EX15/UART_wrapper.sv
+R10
+R20
 !i10b 1
 !s100 >e<z9_50Tn:K1BmnmDaZ63
-R6
-IjVU<GgR64<LiLkKG`]ANI2
-R7
+I9;8LE:HDcCKk9@MTnYHD:3
 S1
-R8
-w1729547028
-8C:/Users/83975/Desktop/ECE551/EX15/UART_wrapper.sv
-FC:/Users/83975/Desktop/ECE551/EX15/UART_wrapper.sv
-!i122 106
+R12
+R18
+8I:/ECE551/EX15/UART_wrapper.sv
+FI:/ECE551/EX15/UART_wrapper.sv
+!i122 256
 L0 1 65
-R10
+R13
+R14
 r1
 !s85 0
 31
-!s108 1729547066.000000
-!s107 C:/Users/83975/Desktop/ECE551/EX15/UART_wrapper.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/83975/Desktop/ECE551/EX15/UART_wrapper.sv|
-!i113 1
-R12
-R3
+!s108 1729705096.000000
+!s107 I:/ECE551/EX15/UART_wrapper.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|I:/ECE551/EX15/UART_wrapper.sv|
+!i113 0
+R16
+R8
 n@u@a@r@t_wrapper

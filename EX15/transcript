@@ -1,28 +1,3 @@
-# 0 compiles, 6 failed with no errors.
-# Error opening I:/ECE551/EX15/CommTB.sv
-# Path name 'I:/ECE551/EX15/CommTB.sv' doesn't exist.
-# Error opening I:/ECE551/EX15/UART_tx.sv
-# Path name 'I:/ECE551/EX15/UART_tx.sv' doesn't exist.
-# Error opening I:/ECE551/EX15/RemoteComm.sv
-# Path name 'I:/ECE551/EX15/RemoteComm.sv' doesn't exist.
-# Error opening I:/ECE551/EX15/UART.sv
-# Path name 'I:/ECE551/EX15/UART.sv' doesn't exist.
-# Error opening I:/ECE551/EX15/UART_wrapper.sv
-# Path name 'I:/ECE551/EX15/UART_wrapper.sv' doesn't exist.
-# Error opening I:/ECE551/EX15/UART_rx.sv
-# Path name 'I:/ECE551/EX15/UART_rx.sv' doesn't exist.
-# Error opening I:/ECE551/EX15/CommTB.sv
-# Path name 'I:/ECE551/EX15/CommTB.sv' doesn't exist.
-# Error opening I:/ECE551/EX15/UART_tx.sv
-# Path name 'I:/ECE551/EX15/UART_tx.sv' doesn't exist.
-# Error opening I:/ECE551/EX15/RemoteComm.sv
-# Path name 'I:/ECE551/EX15/RemoteComm.sv' doesn't exist.
-# Error opening I:/ECE551/EX15/UART.sv
-# Path name 'I:/ECE551/EX15/UART.sv' doesn't exist.
-# Error opening I:/ECE551/EX15/UART_wrapper.sv
-# Path name 'I:/ECE551/EX15/UART_wrapper.sv' doesn't exist.
-# Error opening I:/ECE551/EX15/UART_rx.sv
-# Path name 'I:/ECE551/EX15/UART_rx.sv' doesn't exist.
 # Compile of CommTB.sv was successful.
 # Compile of RemoteComm.sv was successful.
 # Compile of UART.sv was successful.
@@ -30,61 +5,39 @@
 # Compile of UART_tx.sv was successful.
 # Compile of UART_wrapper.sv was successful.
 # 6 compiles, 0 failed with no errors.
-vsim -gui work.CommTB
-# vsim -gui work.CommTB 
-# Start time: 16:24:56 on Oct 21,2024
+vsim work.CommTB -voptargs=+acc
+# vsim work.CommTB -voptargs="+acc" 
+# Start time: 11:25:23 on Oct 23,2024
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Warning: I:/ECE551/EX15/RemoteComm.sv(10): (vopt-2685) [TFMPC] - Too few port connections for 'uart_tc'.  Expected 10, found 9.
+# ** Warning: I:/ECE551/EX15/RemoteComm.sv(10): (vopt-2718) [TFMPC] - Missing connection for port 'clr_rx_rdy'.
+# ** Note: (vopt-143) Recognized 1 FSM in module "RemoteComm(fast)".
+# ** Warning: I:/ECE551/EX15/CommTB.sv(6): (vopt-2685) [TFMPC] - Too few port connections for 'rc'.  Expected 7, found 6.
+# ** Warning: I:/ECE551/EX15/CommTB.sv(6): (vopt-2718) [TFMPC] - Missing connection for port 'RX'.
+# ** Warning: I:/ECE551/EX15/CommTB.sv(7): (vopt-2685) [TFMPC] - Too few port connections for 'wrp'.  Expected 10, found 6.
+# ** Warning: I:/ECE551/EX15/CommTB.sv(7): (vopt-2718) [TFMPC] - Missing connection for port 'TX'.
+# ** Warning: I:/ECE551/EX15/CommTB.sv(7): (vopt-2718) [TFMPC] - Missing connection for port 'tx_done'.
+# ** Warning: I:/ECE551/EX15/CommTB.sv(7): (vopt-2718) [TFMPC] - Missing connection for port 'resp'.
+# ** Warning: I:/ECE551/EX15/CommTB.sv(7): (vopt-2718) [TFMPC] - Missing connection for port 'trmt'.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=10.
 # Loading sv_std.std
-# Loading work.CommTB
-# Loading work.RemoteComm
-# Loading work.UART
-# Loading work.UART_tx
-# Loading work.UART_rx
-# Loading work.UART_wrapper
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'rc'.  Expected 7, found 6.
-#    Time: 0 ns  Iteration: 0  Instance: /CommTB/rc File: C:/Users/83975/Desktop/ECE551/EX15/CommTB.sv Line: 6
-# ** Warning: (vsim-3722) C:/Users/83975/Desktop/ECE551/EX15/CommTB.sv(6): [TFMPC] - Missing connection for port 'RX'.
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'uart_tc'.  Expected 10, found 9.
-#    Time: 0 ns  Iteration: 0  Instance: /CommTB/rc/uart_tc File: C:/Users/83975/Desktop/ECE551/EX15/RemoteComm.sv Line: 10
-# ** Warning: (vsim-3722) C:/Users/83975/Desktop/ECE551/EX15/RemoteComm.sv(10): [TFMPC] - Missing connection for port 'clr_rx_rdy'.
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'wrp'.  Expected 10, found 6.
-#    Time: 0 ns  Iteration: 0  Instance: /CommTB/wrp File: C:/Users/83975/Desktop/ECE551/EX15/CommTB.sv Line: 7
-# ** Warning: (vsim-3722) C:/Users/83975/Desktop/ECE551/EX15/CommTB.sv(7): [TFMPC] - Missing connection for port 'trmt'.
-# ** Warning: (vsim-3722) C:/Users/83975/Desktop/ECE551/EX15/CommTB.sv(7): [TFMPC] - Missing connection for port 'resp'.
-# ** Warning: (vsim-3722) C:/Users/83975/Desktop/ECE551/EX15/CommTB.sv(7): [TFMPC] - Missing connection for port 'tx_done'.
-# ** Warning: (vsim-3722) C:/Users/83975/Desktop/ECE551/EX15/CommTB.sv(7): [TFMPC] - Missing connection for port 'TX'.
+# Loading work.CommTB(fast)
+# Loading work.RemoteComm(fast)
+# Loading work.UART(fast)
+# Loading work.UART_tx(fast)
+# Loading work.UART_rx(fast)
+# Loading work.UART_wrapper(fast)
 add wave -position insertpoint sim:/CommTB/*
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 #           File in use by: yhuang546  Hostname: WIN-8049  ProcessID: 20176
-#           Attempting to use alternate WLF file "./wlft22gcqw".
+#           Attempting to use alternate WLF file "./wlftqiyivc".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlft22gcqw
+#           Using alternate file: ./wlftqiyivc
 run -all
-# ** Note: $stop    : C:/Users/83975/Desktop/ECE551/EX15/CommTB.sv(25)
+# ** Note: $stop    : I:/ECE551/EX15/CommTB.sv(25)
 #    Time: 600010 ns  Iteration: 1  Instance: /CommTB
-# Break in Module CommTB at C:/Users/83975/Desktop/ECE551/EX15/CommTB.sv line 25
-add wave -position insertpoint sim:/CommTB/rc/*
-add wave -position insertpoint sim:/CommTB/wrp/*
-restart
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'rc'.  Expected 7, found 6.
-#    Time: 0 ns  Iteration: 0  Instance: /CommTB/rc File: C:/Users/83975/Desktop/ECE551/EX15/CommTB.sv Line: 6
-# ** Warning: (vsim-3722) C:/Users/83975/Desktop/ECE551/EX15/CommTB.sv(6): [TFMPC] - Missing connection for port 'RX'.
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'uart_tc'.  Expected 10, found 9.
-#    Time: 0 ns  Iteration: 0  Instance: /CommTB/rc/uart_tc File: C:/Users/83975/Desktop/ECE551/EX15/RemoteComm.sv Line: 10
-# ** Warning: (vsim-3722) C:/Users/83975/Desktop/ECE551/EX15/RemoteComm.sv(10): [TFMPC] - Missing connection for port 'clr_rx_rdy'.
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'wrp'.  Expected 10, found 6.
-#    Time: 0 ns  Iteration: 0  Instance: /CommTB/wrp File: C:/Users/83975/Desktop/ECE551/EX15/CommTB.sv Line: 7
-# ** Warning: (vsim-3722) C:/Users/83975/Desktop/ECE551/EX15/CommTB.sv(7): [TFMPC] - Missing connection for port 'trmt'.
-# ** Warning: (vsim-3722) C:/Users/83975/Desktop/ECE551/EX15/CommTB.sv(7): [TFMPC] - Missing connection for port 'resp'.
-# ** Warning: (vsim-3722) C:/Users/83975/Desktop/ECE551/EX15/CommTB.sv(7): [TFMPC] - Missing connection for port 'tx_done'.
-# ** Warning: (vsim-3722) C:/Users/83975/Desktop/ECE551/EX15/CommTB.sv(7): [TFMPC] - Missing connection for port 'TX'.
-run -all
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# ** Note: $stop    : C:/Users/83975/Desktop/ECE551/EX15/CommTB.sv(25)
-#    Time: 600010 ns  Iteration: 1  Instance: /CommTB
-# Break in Module CommTB at C:/Users/83975/Desktop/ECE551/EX15/CommTB.sv line 25
+# Break in Module CommTB at I:/ECE551/EX15/CommTB.sv line 25
 # Compile of CommTB.sv was successful.
 # Compile of RemoteComm.sv was successful.
 # Compile of UART.sv was successful.
@@ -94,31 +47,27 @@ run -all
 # 6 compiles, 0 failed with no errors.
 restart
 # ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# Loading work.CommTB
-# Loading work.RemoteComm
-# Loading work.UART
-# Loading work.UART_tx
-# Loading work.UART_rx
-# Loading work.UART_wrapper
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'rc'.  Expected 7, found 6.
-#    Time: 0 ns  Iteration: 0  Instance: /CommTB/rc File: C:/Users/83975/Desktop/ECE551/EX15/CommTB.sv Line: 6
-# ** Warning: (vsim-3722) C:/Users/83975/Desktop/ECE551/EX15/CommTB.sv(6): [TFMPC] - Missing connection for port 'RX'.
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'uart_tc'.  Expected 10, found 9.
-#    Time: 0 ns  Iteration: 0  Instance: /CommTB/rc/uart_tc File: C:/Users/83975/Desktop/ECE551/EX15/RemoteComm.sv Line: 10
-# ** Warning: (vsim-3722) C:/Users/83975/Desktop/ECE551/EX15/RemoteComm.sv(10): [TFMPC] - Missing connection for port 'clr_rx_rdy'.
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'wrp'.  Expected 10, found 6.
-#    Time: 0 ns  Iteration: 0  Instance: /CommTB/wrp File: C:/Users/83975/Desktop/ECE551/EX15/CommTB.sv Line: 7
-# ** Warning: (vsim-3722) C:/Users/83975/Desktop/ECE551/EX15/CommTB.sv(7): [TFMPC] - Missing connection for port 'trmt'.
-# ** Warning: (vsim-3722) C:/Users/83975/Desktop/ECE551/EX15/CommTB.sv(7): [TFMPC] - Missing connection for port 'resp'.
-# ** Warning: (vsim-3722) C:/Users/83975/Desktop/ECE551/EX15/CommTB.sv(7): [TFMPC] - Missing connection for port 'tx_done'.
-# ** Warning: (vsim-3722) C:/Users/83975/Desktop/ECE551/EX15/CommTB.sv(7): [TFMPC] - Missing connection for port 'TX'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Warning: I:/ECE551/EX15/CommTB.sv(6): (vopt-2685) [TFMPC] - Too few port connections for 'rc'.  Expected 7, found 6.
+# ** Warning: I:/ECE551/EX15/CommTB.sv(6): (vopt-2718) [TFMPC] - Missing connection for port 'RX'.
+# ** Warning: I:/ECE551/EX15/CommTB.sv(7): (vopt-2685) [TFMPC] - Too few port connections for 'wrp'.  Expected 10, found 6.
+# ** Warning: I:/ECE551/EX15/CommTB.sv(7): (vopt-2718) [TFMPC] - Missing connection for port 'TX'.
+# ** Warning: I:/ECE551/EX15/CommTB.sv(7): (vopt-2718) [TFMPC] - Missing connection for port 'tx_done'.
+# ** Warning: I:/ECE551/EX15/CommTB.sv(7): (vopt-2718) [TFMPC] - Missing connection for port 'resp'.
+# ** Warning: I:/ECE551/EX15/CommTB.sv(7): (vopt-2718) [TFMPC] - Missing connection for port 'trmt'.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=8.
+# Loading sv_std.std
+# Loading work.CommTB(fast)
+# Loading work.RemoteComm(fast)
+# Loading work.UART(fast)
+# Loading work.UART_tx(fast)
+# Loading work.UART_rx(fast)
+# Loading work.UART_wrapper(fast)
 run -all
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# ** Note: $stop    : C:/Users/83975/Desktop/ECE551/EX15/CommTB.sv(25)
-#    Time: 600010 ns  Iteration: 1  Instance: /CommTB
-# Break in Module CommTB at C:/Users/83975/Desktop/ECE551/EX15/CommTB.sv line 25
+# ** Note: $stop    : I:/ECE551/EX15/CommTB.sv(30)
+#    Time: 1108070 ns  Iteration: 1  Instance: /CommTB
+# Break in Module CommTB at I:/ECE551/EX15/CommTB.sv line 30
 # Compile of CommTB.sv was successful.
 # Compile of RemoteComm.sv was successful.
 # Compile of UART.sv was successful.
@@ -128,31 +77,28 @@ run -all
 # 6 compiles, 0 failed with no errors.
 restart
 # ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# Loading work.CommTB
-# Loading work.RemoteComm
-# Loading work.UART
-# Loading work.UART_tx
-# Loading work.UART_rx
-# Loading work.UART_wrapper
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'rc'.  Expected 7, found 6.
-#    Time: 0 ns  Iteration: 0  Instance: /CommTB/rc File: C:/Users/83975/Desktop/ECE551/EX15/CommTB.sv Line: 6
-# ** Warning: (vsim-3722) C:/Users/83975/Desktop/ECE551/EX15/CommTB.sv(6): [TFMPC] - Missing connection for port 'RX'.
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'uart_tc'.  Expected 10, found 9.
-#    Time: 0 ns  Iteration: 0  Instance: /CommTB/rc/uart_tc File: C:/Users/83975/Desktop/ECE551/EX15/RemoteComm.sv Line: 10
-# ** Warning: (vsim-3722) C:/Users/83975/Desktop/ECE551/EX15/RemoteComm.sv(10): [TFMPC] - Missing connection for port 'clr_rx_rdy'.
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'wrp'.  Expected 10, found 6.
-#    Time: 0 ns  Iteration: 0  Instance: /CommTB/wrp File: C:/Users/83975/Desktop/ECE551/EX15/CommTB.sv Line: 7
-# ** Warning: (vsim-3722) C:/Users/83975/Desktop/ECE551/EX15/CommTB.sv(7): [TFMPC] - Missing connection for port 'trmt'.
-# ** Warning: (vsim-3722) C:/Users/83975/Desktop/ECE551/EX15/CommTB.sv(7): [TFMPC] - Missing connection for port 'resp'.
-# ** Warning: (vsim-3722) C:/Users/83975/Desktop/ECE551/EX15/CommTB.sv(7): [TFMPC] - Missing connection for port 'tx_done'.
-# ** Warning: (vsim-3722) C:/Users/83975/Desktop/ECE551/EX15/CommTB.sv(7): [TFMPC] - Missing connection for port 'TX'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Warning: I:/ECE551/EX15/CommTB.sv(6): (vopt-2685) [TFMPC] - Too few port connections for 'rc'.  Expected 7, found 6.
+# ** Warning: I:/ECE551/EX15/CommTB.sv(6): (vopt-2718) [TFMPC] - Missing connection for port 'RX'.
+# ** Warning: I:/ECE551/EX15/CommTB.sv(7): (vopt-2685) [TFMPC] - Too few port connections for 'wrp'.  Expected 10, found 6.
+# ** Warning: I:/ECE551/EX15/CommTB.sv(7): (vopt-2718) [TFMPC] - Missing connection for port 'TX'.
+# ** Warning: I:/ECE551/EX15/CommTB.sv(7): (vopt-2718) [TFMPC] - Missing connection for port 'tx_done'.
+# ** Warning: I:/ECE551/EX15/CommTB.sv(7): (vopt-2718) [TFMPC] - Missing connection for port 'resp'.
+# ** Warning: I:/ECE551/EX15/CommTB.sv(7): (vopt-2718) [TFMPC] - Missing connection for port 'trmt'.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=8.
+# Loading sv_std.std
+# Loading work.CommTB(fast)
+# Loading work.RemoteComm(fast)
+# Loading work.UART(fast)
+# Loading work.UART_tx(fast)
+# Loading work.UART_rx(fast)
+# Loading work.UART_wrapper(fast)
 run -all
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# ** Note: $stop    : C:/Users/83975/Desktop/ECE551/EX15/CommTB.sv(25)
-#    Time: 600010 ns  Iteration: 1  Instance: /CommTB
-# Break in Module CommTB at C:/Users/83975/Desktop/ECE551/EX15/CommTB.sv line 25
+# Test Case 1 Passed
+# ** Note: $stop    : I:/ECE551/EX15/CommTB.sv(32)
+#    Time: 1108070 ns  Iteration: 1  Instance: /CommTB
+# Break in Module CommTB at I:/ECE551/EX15/CommTB.sv line 32
 # Compile of CommTB.sv was successful.
 # Compile of RemoteComm.sv was successful.
 # Compile of UART.sv was successful.
@@ -162,31 +108,28 @@ run -all
 # 6 compiles, 0 failed with no errors.
 restart
 # ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# Loading work.CommTB
-# Loading work.RemoteComm
-# Loading work.UART
-# Loading work.UART_tx
-# Loading work.UART_rx
-# Loading work.UART_wrapper
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'rc'.  Expected 7, found 6.
-#    Time: 0 ns  Iteration: 0  Instance: /CommTB/rc File: C:/Users/83975/Desktop/ECE551/EX15/CommTB.sv Line: 6
-# ** Warning: (vsim-3722) C:/Users/83975/Desktop/ECE551/EX15/CommTB.sv(6): [TFMPC] - Missing connection for port 'RX'.
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'uart_tc'.  Expected 10, found 9.
-#    Time: 0 ns  Iteration: 0  Instance: /CommTB/rc/uart_tc File: C:/Users/83975/Desktop/ECE551/EX15/RemoteComm.sv Line: 10
-# ** Warning: (vsim-3722) C:/Users/83975/Desktop/ECE551/EX15/RemoteComm.sv(10): [TFMPC] - Missing connection for port 'clr_rx_rdy'.
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'wrp'.  Expected 10, found 6.
-#    Time: 0 ns  Iteration: 0  Instance: /CommTB/wrp File: C:/Users/83975/Desktop/ECE551/EX15/CommTB.sv Line: 7
-# ** Warning: (vsim-3722) C:/Users/83975/Desktop/ECE551/EX15/CommTB.sv(7): [TFMPC] - Missing connection for port 'trmt'.
-# ** Warning: (vsim-3722) C:/Users/83975/Desktop/ECE551/EX15/CommTB.sv(7): [TFMPC] - Missing connection for port 'resp'.
-# ** Warning: (vsim-3722) C:/Users/83975/Desktop/ECE551/EX15/CommTB.sv(7): [TFMPC] - Missing connection for port 'tx_done'.
-# ** Warning: (vsim-3722) C:/Users/83975/Desktop/ECE551/EX15/CommTB.sv(7): [TFMPC] - Missing connection for port 'TX'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Warning: I:/ECE551/EX15/CommTB.sv(6): (vopt-2685) [TFMPC] - Too few port connections for 'rc'.  Expected 7, found 6.
+# ** Warning: I:/ECE551/EX15/CommTB.sv(6): (vopt-2718) [TFMPC] - Missing connection for port 'RX'.
+# ** Warning: I:/ECE551/EX15/CommTB.sv(7): (vopt-2685) [TFMPC] - Too few port connections for 'wrp'.  Expected 10, found 6.
+# ** Warning: I:/ECE551/EX15/CommTB.sv(7): (vopt-2718) [TFMPC] - Missing connection for port 'TX'.
+# ** Warning: I:/ECE551/EX15/CommTB.sv(7): (vopt-2718) [TFMPC] - Missing connection for port 'tx_done'.
+# ** Warning: I:/ECE551/EX15/CommTB.sv(7): (vopt-2718) [TFMPC] - Missing connection for port 'resp'.
+# ** Warning: I:/ECE551/EX15/CommTB.sv(7): (vopt-2718) [TFMPC] - Missing connection for port 'trmt'.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=8.
+# Loading sv_std.std
+# Loading work.CommTB(fast)
+# Loading work.RemoteComm(fast)
+# Loading work.UART(fast)
+# Loading work.UART_tx(fast)
+# Loading work.UART_rx(fast)
+# Loading work.UART_wrapper(fast)
 run -all
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# ** Note: $stop    : C:/Users/83975/Desktop/ECE551/EX15/CommTB.sv(25)
-#    Time: 600010 ns  Iteration: 1  Instance: /CommTB
-# Break in Module CommTB at C:/Users/83975/Desktop/ECE551/EX15/CommTB.sv line 25
+# Test Case 1 Passed
+# ** Note: $stop    : I:/ECE551/EX15/CommTB.sv(36)
+#    Time: 1108070 ns  Iteration: 1  Instance: /CommTB
+# Break in Module CommTB at I:/ECE551/EX15/CommTB.sv line 36
 # Compile of CommTB.sv was successful.
 # Compile of RemoteComm.sv was successful.
 # Compile of UART.sv was successful.
@@ -196,28 +139,635 @@ run -all
 # 6 compiles, 0 failed with no errors.
 restart
 # ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# Loading work.CommTB
-# Loading work.RemoteComm
-# Loading work.UART
-# Loading work.UART_tx
-# Loading work.UART_rx
-# Loading work.UART_wrapper
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'rc'.  Expected 7, found 6.
-#    Time: 0 ns  Iteration: 0  Instance: /CommTB/rc File: C:/Users/83975/Desktop/ECE551/EX15/CommTB.sv Line: 6
-# ** Warning: (vsim-3722) C:/Users/83975/Desktop/ECE551/EX15/CommTB.sv(6): [TFMPC] - Missing connection for port 'RX'.
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'uart_tc'.  Expected 10, found 9.
-#    Time: 0 ns  Iteration: 0  Instance: /CommTB/rc/uart_tc File: C:/Users/83975/Desktop/ECE551/EX15/RemoteComm.sv Line: 10
-# ** Warning: (vsim-3722) C:/Users/83975/Desktop/ECE551/EX15/RemoteComm.sv(10): [TFMPC] - Missing connection for port 'clr_rx_rdy'.
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'wrp'.  Expected 10, found 6.
-#    Time: 0 ns  Iteration: 0  Instance: /CommTB/wrp File: C:/Users/83975/Desktop/ECE551/EX15/CommTB.sv Line: 7
-# ** Warning: (vsim-3722) C:/Users/83975/Desktop/ECE551/EX15/CommTB.sv(7): [TFMPC] - Missing connection for port 'trmt'.
-# ** Warning: (vsim-3722) C:/Users/83975/Desktop/ECE551/EX15/CommTB.sv(7): [TFMPC] - Missing connection for port 'resp'.
-# ** Warning: (vsim-3722) C:/Users/83975/Desktop/ECE551/EX15/CommTB.sv(7): [TFMPC] - Missing connection for port 'tx_done'.
-# ** Warning: (vsim-3722) C:/Users/83975/Desktop/ECE551/EX15/CommTB.sv(7): [TFMPC] - Missing connection for port 'TX'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Warning: I:/ECE551/EX15/CommTB.sv(6): (vopt-2685) [TFMPC] - Too few port connections for 'rc'.  Expected 7, found 6.
+# ** Warning: I:/ECE551/EX15/CommTB.sv(6): (vopt-2718) [TFMPC] - Missing connection for port 'RX'.
+# ** Warning: I:/ECE551/EX15/CommTB.sv(7): (vopt-2685) [TFMPC] - Too few port connections for 'wrp'.  Expected 10, found 6.
+# ** Warning: I:/ECE551/EX15/CommTB.sv(7): (vopt-2718) [TFMPC] - Missing connection for port 'TX'.
+# ** Warning: I:/ECE551/EX15/CommTB.sv(7): (vopt-2718) [TFMPC] - Missing connection for port 'tx_done'.
+# ** Warning: I:/ECE551/EX15/CommTB.sv(7): (vopt-2718) [TFMPC] - Missing connection for port 'resp'.
+# ** Warning: I:/ECE551/EX15/CommTB.sv(7): (vopt-2718) [TFMPC] - Missing connection for port 'trmt'.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=8.
+# Loading sv_std.std
+# Loading work.CommTB(fast)
+# Loading work.RemoteComm(fast)
+# Loading work.UART(fast)
+# Loading work.UART_tx(fast)
+# Loading work.UART_rx(fast)
+# Loading work.UART_wrapper(fast)
 run -all
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# ** Note: $stop    : C:/Users/83975/Desktop/ECE551/EX15/CommTB.sv(25)
-#    Time: 600010 ns  Iteration: 1  Instance: /CommTB
-# Break in Module CommTB at C:/Users/83975/Desktop/ECE551/EX15/CommTB.sv line 25
+# Test Case 1 Passed
+# ** Note: $stop    : I:/ECE551/EX15/CommTB.sv(38)
+#    Time: 1508070 ns  Iteration: 1  Instance: /CommTB
+# Break in Module CommTB at I:/ECE551/EX15/CommTB.sv line 38
+# Compile of CommTB.sv was successful.
+# Compile of RemoteComm.sv was successful.
+# Compile of UART.sv was successful.
+# Compile of UART_rx.sv was successful.
+# Compile of UART_tx.sv was successful.
+# Compile of UART_wrapper.sv was successful.
+# 6 compiles, 0 failed with no errors.
+# Compile of CommTB.sv was successful.
+# Compile of RemoteComm.sv was successful.
+# Compile of UART.sv was successful.
+# Compile of UART_rx.sv was successful.
+# Compile of UART_tx.sv was successful.
+# Compile of UART_wrapper.sv was successful.
+# 6 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Warning: I:/ECE551/EX15/CommTB.sv(6): (vopt-2685) [TFMPC] - Too few port connections for 'rc'.  Expected 7, found 6.
+# ** Warning: I:/ECE551/EX15/CommTB.sv(6): (vopt-2718) [TFMPC] - Missing connection for port 'RX'.
+# ** Warning: I:/ECE551/EX15/CommTB.sv(7): (vopt-2685) [TFMPC] - Too few port connections for 'wrp'.  Expected 10, found 6.
+# ** Warning: I:/ECE551/EX15/CommTB.sv(7): (vopt-2718) [TFMPC] - Missing connection for port 'TX'.
+# ** Warning: I:/ECE551/EX15/CommTB.sv(7): (vopt-2718) [TFMPC] - Missing connection for port 'tx_done'.
+# ** Warning: I:/ECE551/EX15/CommTB.sv(7): (vopt-2718) [TFMPC] - Missing connection for port 'resp'.
+# ** Warning: I:/ECE551/EX15/CommTB.sv(7): (vopt-2718) [TFMPC] - Missing connection for port 'trmt'.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=8.
+# Loading sv_std.std
+# Loading work.CommTB(fast)
+# Loading work.RemoteComm(fast)
+# Loading work.UART(fast)
+# Loading work.UART_tx(fast)
+# Loading work.UART_rx(fast)
+# Loading work.UART_wrapper(fast)
+run -all
+# Test Case 1 Passed
+# ** Note: $stop    : I:/ECE551/EX15/CommTB.sv(43)
+#    Time: 1708080 ns  Iteration: 1  Instance: /CommTB
+# Break in Module CommTB at I:/ECE551/EX15/CommTB.sv line 43
+# Compile of CommTB.sv was successful.
+# Compile of RemoteComm.sv was successful.
+# Compile of UART.sv was successful.
+# Compile of UART_rx.sv was successful.
+# Compile of UART_tx.sv was successful.
+# Compile of UART_wrapper.sv was successful.
+# 6 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Warning: I:/ECE551/EX15/CommTB.sv(6): (vopt-2685) [TFMPC] - Too few port connections for 'rc'.  Expected 7, found 6.
+# ** Warning: I:/ECE551/EX15/CommTB.sv(6): (vopt-2718) [TFMPC] - Missing connection for port 'RX'.
+# ** Warning: I:/ECE551/EX15/CommTB.sv(7): (vopt-2685) [TFMPC] - Too few port connections for 'wrp'.  Expected 10, found 6.
+# ** Warning: I:/ECE551/EX15/CommTB.sv(7): (vopt-2718) [TFMPC] - Missing connection for port 'TX'.
+# ** Warning: I:/ECE551/EX15/CommTB.sv(7): (vopt-2718) [TFMPC] - Missing connection for port 'tx_done'.
+# ** Warning: I:/ECE551/EX15/CommTB.sv(7): (vopt-2718) [TFMPC] - Missing connection for port 'resp'.
+# ** Warning: I:/ECE551/EX15/CommTB.sv(7): (vopt-2718) [TFMPC] - Missing connection for port 'trmt'.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=8.
+# Loading sv_std.std
+# Loading work.CommTB(fast)
+# Loading work.RemoteComm(fast)
+# Loading work.UART(fast)
+# Loading work.UART_tx(fast)
+# Loading work.UART_rx(fast)
+# Loading work.UART_wrapper(fast)
+run -all
+# Test Case 1 Passed
+# ** Note: $stop    : I:/ECE551/EX15/CommTB.sv(43)
+#    Time: 1708080 ns  Iteration: 1  Instance: /CommTB
+# Break in Module CommTB at I:/ECE551/EX15/CommTB.sv line 43
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=8.
+# Loading work.CommTB(fast)
+# Loading work.RemoteComm(fast)
+# Loading work.UART(fast)
+# Loading work.UART_tx(fast)
+# Loading work.UART_rx(fast)
+# Loading work.UART_wrapper(fast)
+# Compile of CommTB.sv was successful.
+# Compile of RemoteComm.sv was successful.
+# Compile of UART.sv was successful.
+# Compile of UART_rx.sv was successful.
+# Compile of UART_tx.sv was successful.
+# Compile of UART_wrapper.sv was successful.
+# 6 compiles, 0 failed with no errors.
+run -all
+# Test Case 1 Passed
+# ** Note: $stop    : I:/ECE551/EX15/CommTB.sv(43)
+#    Time: 1708080 ns  Iteration: 1  Instance: /CommTB
+# Break in Module CommTB at I:/ECE551/EX15/CommTB.sv line 43
+# Compile of CommTB.sv was successful.
+# Compile of RemoteComm.sv was successful.
+# Compile of UART.sv was successful.
+# Compile of UART_rx.sv was successful.
+# Compile of UART_tx.sv was successful.
+# Compile of UART_wrapper.sv was successful.
+# 6 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Warning: I:/ECE551/EX15/CommTB.sv(6): (vopt-2685) [TFMPC] - Too few port connections for 'rc'.  Expected 7, found 6.
+# ** Warning: I:/ECE551/EX15/CommTB.sv(6): (vopt-2718) [TFMPC] - Missing connection for port 'RX'.
+# ** Warning: I:/ECE551/EX15/CommTB.sv(7): (vopt-2685) [TFMPC] - Too few port connections for 'wrp'.  Expected 10, found 6.
+# ** Warning: I:/ECE551/EX15/CommTB.sv(7): (vopt-2718) [TFMPC] - Missing connection for port 'TX'.
+# ** Warning: I:/ECE551/EX15/CommTB.sv(7): (vopt-2718) [TFMPC] - Missing connection for port 'tx_done'.
+# ** Warning: I:/ECE551/EX15/CommTB.sv(7): (vopt-2718) [TFMPC] - Missing connection for port 'resp'.
+# ** Warning: I:/ECE551/EX15/CommTB.sv(7): (vopt-2718) [TFMPC] - Missing connection for port 'trmt'.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=8.
+# Loading sv_std.std
+# Loading work.CommTB(fast)
+# Loading work.RemoteComm(fast)
+# Loading work.UART(fast)
+# Loading work.UART_tx(fast)
+# Loading work.UART_rx(fast)
+# Loading work.UART_wrapper(fast)
+run -all
+# Test Case 1 Passed
+# ** Note: $stop    : I:/ECE551/EX15/CommTB.sv(43)
+#    Time: 1708080 ns  Iteration: 1  Instance: /CommTB
+# Break in Module CommTB at I:/ECE551/EX15/CommTB.sv line 43
+# Compile of CommTB.sv was successful.
+# Compile of RemoteComm.sv was successful.
+# Compile of UART.sv was successful.
+# Compile of UART_rx.sv was successful.
+# Compile of UART_tx.sv was successful.
+# Compile of UART_wrapper.sv was successful.
+# 6 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Warning: I:/ECE551/EX15/CommTB.sv(6): (vopt-2685) [TFMPC] - Too few port connections for 'rc'.  Expected 7, found 6.
+# ** Warning: I:/ECE551/EX15/CommTB.sv(6): (vopt-2718) [TFMPC] - Missing connection for port 'RX'.
+# ** Warning: I:/ECE551/EX15/CommTB.sv(7): (vopt-2685) [TFMPC] - Too few port connections for 'wrp'.  Expected 10, found 6.
+# ** Warning: I:/ECE551/EX15/CommTB.sv(7): (vopt-2718) [TFMPC] - Missing connection for port 'TX'.
+# ** Warning: I:/ECE551/EX15/CommTB.sv(7): (vopt-2718) [TFMPC] - Missing connection for port 'tx_done'.
+# ** Warning: I:/ECE551/EX15/CommTB.sv(7): (vopt-2718) [TFMPC] - Missing connection for port 'resp'.
+# ** Warning: I:/ECE551/EX15/CommTB.sv(7): (vopt-2718) [TFMPC] - Missing connection for port 'trmt'.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=8.
+# Loading sv_std.std
+# Loading work.CommTB(fast)
+# Loading work.RemoteComm(fast)
+# Loading work.UART(fast)
+# Loading work.UART_tx(fast)
+# Loading work.UART_rx(fast)
+# Loading work.UART_wrapper(fast)
+run -all
+# Test Case 1 Passed
+# ** Note: $stop    : I:/ECE551/EX15/CommTB.sv(43)
+#    Time: 1708070 ns  Iteration: 1  Instance: /CommTB
+# Break in Module CommTB at I:/ECE551/EX15/CommTB.sv line 43
+# Compile of CommTB.sv was successful.
+# Compile of RemoteComm.sv was successful.
+# Compile of UART.sv was successful.
+# Compile of UART_rx.sv was successful.
+# Compile of UART_tx.sv was successful.
+# Compile of UART_wrapper.sv was successful.
+# 6 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Warning: I:/ECE551/EX15/CommTB.sv(6): (vopt-2685) [TFMPC] - Too few port connections for 'rc'.  Expected 7, found 6.
+# ** Warning: I:/ECE551/EX15/CommTB.sv(6): (vopt-2718) [TFMPC] - Missing connection for port 'RX'.
+# ** Warning: I:/ECE551/EX15/CommTB.sv(7): (vopt-2685) [TFMPC] - Too few port connections for 'wrp'.  Expected 10, found 6.
+# ** Warning: I:/ECE551/EX15/CommTB.sv(7): (vopt-2718) [TFMPC] - Missing connection for port 'TX'.
+# ** Warning: I:/ECE551/EX15/CommTB.sv(7): (vopt-2718) [TFMPC] - Missing connection for port 'tx_done'.
+# ** Warning: I:/ECE551/EX15/CommTB.sv(7): (vopt-2718) [TFMPC] - Missing connection for port 'resp'.
+# ** Warning: I:/ECE551/EX15/CommTB.sv(7): (vopt-2718) [TFMPC] - Missing connection for port 'trmt'.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=8.
+# Loading sv_std.std
+# Loading work.CommTB(fast)
+# Loading work.RemoteComm(fast)
+# Loading work.UART(fast)
+# Loading work.UART_tx(fast)
+# Loading work.UART_rx(fast)
+# Loading work.UART_wrapper(fast)
+run -all
+# Test Case 1 Passed
+# ** Note: $stop    : I:/ECE551/EX15/CommTB.sv(44)
+#    Time: 1708070 ns  Iteration: 1  Instance: /CommTB
+# Break in Module CommTB at I:/ECE551/EX15/CommTB.sv line 44
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=8.
+# Loading work.CommTB(fast)
+# Loading work.RemoteComm(fast)
+# Loading work.UART(fast)
+# Loading work.UART_tx(fast)
+# Loading work.UART_rx(fast)
+# Loading work.UART_wrapper(fast)
+# Compile of CommTB.sv was successful.
+# Compile of RemoteComm.sv was successful.
+# Compile of UART.sv was successful.
+# Compile of UART_rx.sv was successful.
+# Compile of UART_tx.sv was successful.
+# Compile of UART_wrapper.sv was successful.
+# 6 compiles, 0 failed with no errors.
+run -all
+# Test Case 1 Passed
+# ** Note: $stop    : I:/ECE551/EX15/CommTB.sv(44)
+#    Time: 1708070 ns  Iteration: 1  Instance: /CommTB
+# Break in Module CommTB at I:/ECE551/EX15/CommTB.sv line 44
+# Compile of CommTB.sv was successful.
+# Compile of RemoteComm.sv was successful.
+# Compile of UART.sv was successful.
+# Compile of UART_rx.sv was successful.
+# Compile of UART_tx.sv was successful.
+# Compile of UART_wrapper.sv was successful.
+# 6 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Warning: I:/ECE551/EX15/CommTB.sv(6): (vopt-2685) [TFMPC] - Too few port connections for 'rc'.  Expected 7, found 6.
+# ** Warning: I:/ECE551/EX15/CommTB.sv(6): (vopt-2718) [TFMPC] - Missing connection for port 'RX'.
+# ** Warning: I:/ECE551/EX15/CommTB.sv(7): (vopt-2685) [TFMPC] - Too few port connections for 'wrp'.  Expected 10, found 6.
+# ** Warning: I:/ECE551/EX15/CommTB.sv(7): (vopt-2718) [TFMPC] - Missing connection for port 'TX'.
+# ** Warning: I:/ECE551/EX15/CommTB.sv(7): (vopt-2718) [TFMPC] - Missing connection for port 'tx_done'.
+# ** Warning: I:/ECE551/EX15/CommTB.sv(7): (vopt-2718) [TFMPC] - Missing connection for port 'resp'.
+# ** Warning: I:/ECE551/EX15/CommTB.sv(7): (vopt-2718) [TFMPC] - Missing connection for port 'trmt'.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=8.
+# Loading sv_std.std
+# Loading work.CommTB(fast)
+# Loading work.RemoteComm(fast)
+# Loading work.UART(fast)
+# Loading work.UART_tx(fast)
+# Loading work.UART_rx(fast)
+# Loading work.UART_wrapper(fast)
+run -all
+# Test Case 1 Passed
+# ** Note: $stop    : I:/ECE551/EX15/CommTB.sv(43)
+#    Time: 1708070 ns  Iteration: 1  Instance: /CommTB
+# Break in Module CommTB at I:/ECE551/EX15/CommTB.sv line 43
+# Compile of CommTB.sv was successful.
+# Compile of RemoteComm.sv was successful.
+# Compile of UART.sv was successful.
+# Compile of UART_rx.sv was successful.
+# Compile of UART_tx.sv was successful.
+# Compile of UART_wrapper.sv was successful.
+# 6 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Warning: I:/ECE551/EX15/CommTB.sv(6): (vopt-2685) [TFMPC] - Too few port connections for 'rc'.  Expected 7, found 6.
+# ** Warning: I:/ECE551/EX15/CommTB.sv(6): (vopt-2718) [TFMPC] - Missing connection for port 'RX'.
+# ** Warning: I:/ECE551/EX15/CommTB.sv(7): (vopt-2685) [TFMPC] - Too few port connections for 'wrp'.  Expected 10, found 6.
+# ** Warning: I:/ECE551/EX15/CommTB.sv(7): (vopt-2718) [TFMPC] - Missing connection for port 'TX'.
+# ** Warning: I:/ECE551/EX15/CommTB.sv(7): (vopt-2718) [TFMPC] - Missing connection for port 'tx_done'.
+# ** Warning: I:/ECE551/EX15/CommTB.sv(7): (vopt-2718) [TFMPC] - Missing connection for port 'resp'.
+# ** Warning: I:/ECE551/EX15/CommTB.sv(7): (vopt-2718) [TFMPC] - Missing connection for port 'trmt'.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=8.
+# Loading sv_std.std
+# Loading work.CommTB(fast)
+# Loading work.RemoteComm(fast)
+# Loading work.UART(fast)
+# Loading work.UART_tx(fast)
+# Loading work.UART_rx(fast)
+# Loading work.UART_wrapper(fast)
+run -all
+# Test Case 1 Passed
+# ** Note: $stop    : I:/ECE551/EX15/CommTB.sv(43)
+#    Time: 1708080 ns  Iteration: 1  Instance: /CommTB
+# Break in Module CommTB at I:/ECE551/EX15/CommTB.sv line 43
+# Compile of CommTB.sv was successful.
+# Compile of RemoteComm.sv was successful.
+# Compile of UART.sv was successful.
+# Compile of UART_rx.sv was successful.
+# Compile of UART_tx.sv was successful.
+# Compile of UART_wrapper.sv was successful.
+# 6 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Warning: I:/ECE551/EX15/CommTB.sv(6): (vopt-2685) [TFMPC] - Too few port connections for 'rc'.  Expected 7, found 6.
+# ** Warning: I:/ECE551/EX15/CommTB.sv(6): (vopt-2718) [TFMPC] - Missing connection for port 'RX'.
+# ** Warning: I:/ECE551/EX15/CommTB.sv(7): (vopt-2685) [TFMPC] - Too few port connections for 'wrp'.  Expected 10, found 6.
+# ** Warning: I:/ECE551/EX15/CommTB.sv(7): (vopt-2718) [TFMPC] - Missing connection for port 'TX'.
+# ** Warning: I:/ECE551/EX15/CommTB.sv(7): (vopt-2718) [TFMPC] - Missing connection for port 'tx_done'.
+# ** Warning: I:/ECE551/EX15/CommTB.sv(7): (vopt-2718) [TFMPC] - Missing connection for port 'resp'.
+# ** Warning: I:/ECE551/EX15/CommTB.sv(7): (vopt-2718) [TFMPC] - Missing connection for port 'trmt'.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=8.
+# Loading sv_std.std
+# Loading work.CommTB(fast)
+# Loading work.RemoteComm(fast)
+# Loading work.UART(fast)
+# Loading work.UART_tx(fast)
+# Loading work.UART_rx(fast)
+# Loading work.UART_wrapper(fast)
+run -all
+# Test Case 1 Passed
+# ** Note: $stop    : I:/ECE551/EX15/CommTB.sv(43)
+#    Time: 1708080 ns  Iteration: 1  Instance: /CommTB
+# Break in Module CommTB at I:/ECE551/EX15/CommTB.sv line 43
+# Compile of CommTB.sv was successful.
+# Compile of RemoteComm.sv was successful.
+# Compile of UART.sv was successful.
+# Compile of UART_rx.sv was successful.
+# Compile of UART_tx.sv was successful.
+# Compile of UART_wrapper.sv was successful.
+# 6 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Warning: I:/ECE551/EX15/CommTB.sv(6): (vopt-2685) [TFMPC] - Too few port connections for 'rc'.  Expected 7, found 6.
+# ** Warning: I:/ECE551/EX15/CommTB.sv(6): (vopt-2718) [TFMPC] - Missing connection for port 'RX'.
+# ** Warning: I:/ECE551/EX15/CommTB.sv(7): (vopt-2685) [TFMPC] - Too few port connections for 'wrp'.  Expected 10, found 6.
+# ** Warning: I:/ECE551/EX15/CommTB.sv(7): (vopt-2718) [TFMPC] - Missing connection for port 'TX'.
+# ** Warning: I:/ECE551/EX15/CommTB.sv(7): (vopt-2718) [TFMPC] - Missing connection for port 'tx_done'.
+# ** Warning: I:/ECE551/EX15/CommTB.sv(7): (vopt-2718) [TFMPC] - Missing connection for port 'resp'.
+# ** Warning: I:/ECE551/EX15/CommTB.sv(7): (vopt-2718) [TFMPC] - Missing connection for port 'trmt'.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=8.
+# Loading sv_std.std
+# Loading work.CommTB(fast)
+# Loading work.RemoteComm(fast)
+# Loading work.UART(fast)
+# Loading work.UART_tx(fast)
+# Loading work.UART_rx(fast)
+# Loading work.UART_wrapper(fast)
+run -all
+# Test Case 1 Passed
+# ** Note: $stop    : I:/ECE551/EX15/CommTB.sv(43)
+#    Time: 1708080 ns  Iteration: 1  Instance: /CommTB
+# Break in Module CommTB at I:/ECE551/EX15/CommTB.sv line 43
+# Compile of CommTB.sv was successful.
+# Compile of RemoteComm.sv was successful.
+# Compile of UART.sv was successful.
+# Compile of UART_rx.sv was successful.
+# Compile of UART_tx.sv was successful.
+# Compile of UART_wrapper.sv was successful.
+# 6 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Warning: I:/ECE551/EX15/CommTB.sv(6): (vopt-2685) [TFMPC] - Too few port connections for 'rc'.  Expected 7, found 6.
+# ** Warning: I:/ECE551/EX15/CommTB.sv(6): (vopt-2718) [TFMPC] - Missing connection for port 'RX'.
+# ** Warning: I:/ECE551/EX15/CommTB.sv(7): (vopt-2685) [TFMPC] - Too few port connections for 'wrp'.  Expected 10, found 6.
+# ** Warning: I:/ECE551/EX15/CommTB.sv(7): (vopt-2718) [TFMPC] - Missing connection for port 'TX'.
+# ** Warning: I:/ECE551/EX15/CommTB.sv(7): (vopt-2718) [TFMPC] - Missing connection for port 'tx_done'.
+# ** Warning: I:/ECE551/EX15/CommTB.sv(7): (vopt-2718) [TFMPC] - Missing connection for port 'resp'.
+# ** Warning: I:/ECE551/EX15/CommTB.sv(7): (vopt-2718) [TFMPC] - Missing connection for port 'trmt'.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=8.
+# Loading sv_std.std
+# Loading work.CommTB(fast)
+# Loading work.RemoteComm(fast)
+# Loading work.UART(fast)
+# Loading work.UART_tx(fast)
+# Loading work.UART_rx(fast)
+# Loading work.UART_wrapper(fast)
+run -all
+# Test Case 1 Passed
+# ** Note: $stop    : I:/ECE551/EX15/CommTB.sv(43)
+#    Time: 1708080 ns  Iteration: 1  Instance: /CommTB
+# Break in Module CommTB at I:/ECE551/EX15/CommTB.sv line 43
+add wave -position insertpoint  \
+sim:/CommTB/rc/state
+add wave -position insertpoint  \
+sim:/CommTB/rc/set_cmd_snt
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=8.
+# Loading work.CommTB(fast)
+# Loading work.RemoteComm(fast)
+# Loading work.UART(fast)
+# Loading work.UART_tx(fast)
+# Loading work.UART_rx(fast)
+# Loading work.UART_wrapper(fast)
+run -all
+# Test Case 1 Passed
+# ** Note: $stop    : I:/ECE551/EX15/CommTB.sv(43)
+#    Time: 1708080 ns  Iteration: 1  Instance: /CommTB
+# Break in Module CommTB at I:/ECE551/EX15/CommTB.sv line 43
+add wave -position insertpoint  \
+sim:/CommTB/rc/cmd_snt
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=8.
+# Loading work.CommTB(fast)
+# Loading work.RemoteComm(fast)
+# Loading work.UART(fast)
+# Loading work.UART_tx(fast)
+# Loading work.UART_rx(fast)
+# Loading work.UART_wrapper(fast)
+run -all
+# Test Case 1 Passed
+# ** Note: $stop    : I:/ECE551/EX15/CommTB.sv(43)
+#    Time: 1708080 ns  Iteration: 1  Instance: /CommTB
+# Break in Module CommTB at I:/ECE551/EX15/CommTB.sv line 43
+add wave -position insertpoint  \
+sim:/CommTB/rc/tx_done
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=8.
+# Loading work.CommTB(fast)
+# Loading work.RemoteComm(fast)
+# Loading work.UART(fast)
+# Loading work.UART_tx(fast)
+# Loading work.UART_rx(fast)
+# Loading work.UART_wrapper(fast)
+run -all
+# Test Case 1 Passed
+# ** Note: $stop    : I:/ECE551/EX15/CommTB.sv(43)
+#    Time: 1708080 ns  Iteration: 1  Instance: /CommTB
+# Break in Module CommTB at I:/ECE551/EX15/CommTB.sv line 43
+# Compile of CommTB.sv was successful.
+# Compile of RemoteComm.sv was successful.
+# Compile of UART.sv was successful.
+# Compile of UART_rx.sv was successful.
+# Compile of UART_tx.sv was successful.
+# Compile of UART_wrapper.sv was successful.
+# 6 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Warning: I:/ECE551/EX15/RemoteComm.sv(10): (vopt-2685) [TFMPC] - Too few port connections for 'uart_tc'.  Expected 10, found 9.
+# ** Warning: I:/ECE551/EX15/RemoteComm.sv(10): (vopt-2718) [TFMPC] - Missing connection for port 'clr_rx_rdy'.
+# ** Note: (vopt-143) Recognized 1 FSM in module "RemoteComm(fast)".
+# ** Warning: I:/ECE551/EX15/CommTB.sv(6): (vopt-2685) [TFMPC] - Too few port connections for 'rc'.  Expected 7, found 6.
+# ** Warning: I:/ECE551/EX15/CommTB.sv(6): (vopt-2718) [TFMPC] - Missing connection for port 'RX'.
+# ** Warning: I:/ECE551/EX15/CommTB.sv(7): (vopt-2685) [TFMPC] - Too few port connections for 'wrp'.  Expected 10, found 6.
+# ** Warning: I:/ECE551/EX15/CommTB.sv(7): (vopt-2718) [TFMPC] - Missing connection for port 'TX'.
+# ** Warning: I:/ECE551/EX15/CommTB.sv(7): (vopt-2718) [TFMPC] - Missing connection for port 'tx_done'.
+# ** Warning: I:/ECE551/EX15/CommTB.sv(7): (vopt-2718) [TFMPC] - Missing connection for port 'resp'.
+# ** Warning: I:/ECE551/EX15/CommTB.sv(7): (vopt-2718) [TFMPC] - Missing connection for port 'trmt'.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=10.
+# Loading sv_std.std
+# Loading work.CommTB(fast)
+# Loading work.RemoteComm(fast)
+# Loading work.UART(fast)
+# Loading work.UART_tx(fast)
+# Loading work.UART_rx(fast)
+# Loading work.UART_wrapper(fast)
+run -all
+# Test Case 1 Passed
+# ** Note: $stop    : I:/ECE551/EX15/CommTB.sv(46)
+#    Time: 1721060 ns  Iteration: 1  Instance: /CommTB
+# Break in Module CommTB at I:/ECE551/EX15/CommTB.sv line 46
+# Compile of CommTB.sv was successful.
+# Compile of RemoteComm.sv was successful.
+# Compile of UART.sv was successful.
+# Compile of UART_rx.sv was successful.
+# Compile of UART_tx.sv was successful.
+# Compile of UART_wrapper.sv was successful.
+# 6 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Warning: I:/ECE551/EX15/CommTB.sv(6): (vopt-2685) [TFMPC] - Too few port connections for 'rc'.  Expected 7, found 6.
+# ** Warning: I:/ECE551/EX15/CommTB.sv(6): (vopt-2718) [TFMPC] - Missing connection for port 'RX'.
+# ** Warning: I:/ECE551/EX15/CommTB.sv(7): (vopt-2685) [TFMPC] - Too few port connections for 'wrp'.  Expected 10, found 6.
+# ** Warning: I:/ECE551/EX15/CommTB.sv(7): (vopt-2718) [TFMPC] - Missing connection for port 'TX'.
+# ** Warning: I:/ECE551/EX15/CommTB.sv(7): (vopt-2718) [TFMPC] - Missing connection for port 'tx_done'.
+# ** Warning: I:/ECE551/EX15/CommTB.sv(7): (vopt-2718) [TFMPC] - Missing connection for port 'resp'.
+# ** Warning: I:/ECE551/EX15/CommTB.sv(7): (vopt-2718) [TFMPC] - Missing connection for port 'trmt'.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=8.
+# Loading sv_std.std
+# Loading work.CommTB(fast)
+# Loading work.RemoteComm(fast)
+# Loading work.UART(fast)
+# Loading work.UART_tx(fast)
+# Loading work.UART_rx(fast)
+# Loading work.UART_wrapper(fast)
+run -all
+# Test Case 1 Passed
+# ** Note: $stop    : I:/ECE551/EX15/CommTB.sv(46)
+#    Time: 1721060 ns  Iteration: 1  Instance: /CommTB
+# Break in Module CommTB at I:/ECE551/EX15/CommTB.sv line 46
+# Compile of CommTB.sv was successful.
+# Compile of RemoteComm.sv was successful.
+# Compile of UART.sv was successful.
+# Compile of UART_rx.sv was successful.
+# Compile of UART_tx.sv was successful.
+# Compile of UART_wrapper.sv was successful.
+# 6 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Warning: I:/ECE551/EX15/CommTB.sv(6): (vopt-2685) [TFMPC] - Too few port connections for 'rc'.  Expected 7, found 6.
+# ** Warning: I:/ECE551/EX15/CommTB.sv(6): (vopt-2718) [TFMPC] - Missing connection for port 'RX'.
+# ** Warning: I:/ECE551/EX15/CommTB.sv(7): (vopt-2685) [TFMPC] - Too few port connections for 'wrp'.  Expected 10, found 6.
+# ** Warning: I:/ECE551/EX15/CommTB.sv(7): (vopt-2718) [TFMPC] - Missing connection for port 'TX'.
+# ** Warning: I:/ECE551/EX15/CommTB.sv(7): (vopt-2718) [TFMPC] - Missing connection for port 'tx_done'.
+# ** Warning: I:/ECE551/EX15/CommTB.sv(7): (vopt-2718) [TFMPC] - Missing connection for port 'resp'.
+# ** Warning: I:/ECE551/EX15/CommTB.sv(7): (vopt-2718) [TFMPC] - Missing connection for port 'trmt'.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=8.
+# Loading sv_std.std
+# Loading work.CommTB(fast)
+# Loading work.RemoteComm(fast)
+# Loading work.UART(fast)
+# Loading work.UART_tx(fast)
+# Loading work.UART_rx(fast)
+# Loading work.UART_wrapper(fast)
+run -all
+# Test Case 1 Passed
+# ** Note: $stop    : I:/ECE551/EX15/CommTB.sv(47)
+#    Time: 1721070 ns  Iteration: 1  Instance: /CommTB
+# Break in Module CommTB at I:/ECE551/EX15/CommTB.sv line 47
+# Compile of CommTB.sv was successful.
+# Compile of RemoteComm.sv was successful.
+restart
+# Compile of UART.sv was successful.
+# Compile of UART_rx.sv was successful.
+# Compile of UART_tx.sv was successful.
+# Compile of UART_wrapper.sv was successful.
+# 6 compiles, 0 failed with no errors.
+# Compile of CommTB.sv was successful.
+# Compile of RemoteComm.sv was successful.
+# Compile of UART.sv was successful.
+# Compile of UART_rx.sv was successful.
+# Compile of UART_tx.sv was successful.
+# Compile of UART_wrapper.sv was successful.
+# 6 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Warning: I:/ECE551/EX15/CommTB.sv(6): (vopt-2685) [TFMPC] - Too few port connections for 'rc'.  Expected 7, found 6.
+# ** Warning: I:/ECE551/EX15/CommTB.sv(6): (vopt-2718) [TFMPC] - Missing connection for port 'RX'.
+# ** Warning: I:/ECE551/EX15/CommTB.sv(7): (vopt-2685) [TFMPC] - Too few port connections for 'wrp'.  Expected 10, found 6.
+# ** Warning: I:/ECE551/EX15/CommTB.sv(7): (vopt-2718) [TFMPC] - Missing connection for port 'TX'.
+# ** Warning: I:/ECE551/EX15/CommTB.sv(7): (vopt-2718) [TFMPC] - Missing connection for port 'tx_done'.
+# ** Warning: I:/ECE551/EX15/CommTB.sv(7): (vopt-2718) [TFMPC] - Missing connection for port 'resp'.
+# ** Warning: I:/ECE551/EX15/CommTB.sv(7): (vopt-2718) [TFMPC] - Missing connection for port 'trmt'.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=8.
+# Loading sv_std.std
+# Loading work.CommTB(fast)
+# Loading work.RemoteComm(fast)
+# Loading work.UART(fast)
+# Loading work.UART_tx(fast)
+# Loading work.UART_rx(fast)
+# Loading work.UART_wrapper(fast)
+run -all
+# Test Case 1 Passed
+# Test Case 2 Passed
+# ** Note: $stop    : I:/ECE551/EX15/CommTB.sv(55)
+#    Time: 2229120 ns  Iteration: 1  Instance: /CommTB
+# Break in Module CommTB at I:/ECE551/EX15/CommTB.sv line 55
+# Compile of CommTB.sv was successful.
+# Compile of RemoteComm.sv was successful.
+# Compile of UART.sv was successful.
+# Compile of UART_rx.sv was successful.
+# Compile of UART_tx.sv was successful.
+# Compile of UART_wrapper.sv was successful.
+# 6 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Warning: I:/ECE551/EX15/CommTB.sv(6): (vopt-2685) [TFMPC] - Too few port connections for 'rc'.  Expected 7, found 6.
+# ** Warning: I:/ECE551/EX15/CommTB.sv(6): (vopt-2718) [TFMPC] - Missing connection for port 'RX'.
+# ** Warning: I:/ECE551/EX15/CommTB.sv(7): (vopt-2685) [TFMPC] - Too few port connections for 'wrp'.  Expected 10, found 6.
+# ** Warning: I:/ECE551/EX15/CommTB.sv(7): (vopt-2718) [TFMPC] - Missing connection for port 'TX'.
+# ** Warning: I:/ECE551/EX15/CommTB.sv(7): (vopt-2718) [TFMPC] - Missing connection for port 'tx_done'.
+# ** Warning: I:/ECE551/EX15/CommTB.sv(7): (vopt-2718) [TFMPC] - Missing connection for port 'resp'.
+# ** Warning: I:/ECE551/EX15/CommTB.sv(7): (vopt-2718) [TFMPC] - Missing connection for port 'trmt'.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=8.
+# Loading sv_std.std
+# Loading work.CommTB(fast)
+# Loading work.RemoteComm(fast)
+# Loading work.UART(fast)
+# Loading work.UART_tx(fast)
+# Loading work.UART_rx(fast)
+# Loading work.UART_wrapper(fast)
+run -all
+# Test Case 1 Passed
+# Compile of CommTB.sv was successful.
+# Compile of RemoteComm.sv was successful.
+# Compile of UART.sv was successful.
+# Compile of UART_rx.sv was successful.
+# Compile of UART_tx.sv was successful.
+# Compile of UART_wrapper.sv was successful.
+# 6 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Warning: I:/ECE551/EX15/CommTB.sv(6): (vopt-2685) [TFMPC] - Too few port connections for 'rc'.  Expected 7, found 6.
+# ** Warning: I:/ECE551/EX15/CommTB.sv(6): (vopt-2718) [TFMPC] - Missing connection for port 'RX'.
+# ** Warning: I:/ECE551/EX15/CommTB.sv(7): (vopt-2685) [TFMPC] - Too few port connections for 'wrp'.  Expected 10, found 6.
+# ** Warning: I:/ECE551/EX15/CommTB.sv(7): (vopt-2718) [TFMPC] - Missing connection for port 'TX'.
+# ** Warning: I:/ECE551/EX15/CommTB.sv(7): (vopt-2718) [TFMPC] - Missing connection for port 'tx_done'.
+# ** Warning: I:/ECE551/EX15/CommTB.sv(7): (vopt-2718) [TFMPC] - Missing connection for port 'resp'.
+# ** Warning: I:/ECE551/EX15/CommTB.sv(7): (vopt-2718) [TFMPC] - Missing connection for port 'trmt'.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=8.
+# Loading sv_std.std
+# Loading work.CommTB(fast)
+# Loading work.RemoteComm(fast)
+# Loading work.UART(fast)
+# Loading work.UART_tx(fast)
+# Loading work.UART_rx(fast)
+# Loading work.UART_wrapper(fast)
+run -all
+# Test Case 1 Passed
+# Test Case 2 Passed
+# ** Note: $stop    : I:/ECE551/EX15/CommTB.sv(55)
+#    Time: 2229120 ns  Iteration: 1  Instance: /CommTB
+# Break in Module CommTB at I:/ECE551/EX15/CommTB.sv line 55

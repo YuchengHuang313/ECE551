@@ -37,7 +37,7 @@ initial begin
 	// cmd_snt would happen in a posedge clk, we need to wait for half clk cycle 
 	// to make sure that snd_cmd can be received properly
 	@(posedge cmd_snt);
-	@(negedge clk);
+	// @(negedge clk);
 	cmd_in = 16'h0ff0;
 	snd_cmd = 1'b1;
 	clr_cmd_rdy = 1'b1;
